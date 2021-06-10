@@ -180,4 +180,13 @@
 			background: white;
 		}
 	}
+	&--yellow{
+		background: #FF8D00;
+		border-color: #FF8D00;
+
+		&:hover{
+			color: #FF8D00;
+			background: white;
+		}
+	}
 }
