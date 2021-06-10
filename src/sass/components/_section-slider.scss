@@ -1,0 +1,21 @@
+.section-slider {
+	padding-top: 55px;
+	padding-bottom: 110px;
+
+	@include for-800 {
+		padding-bottom: 50px;
+	}
+
+	&__inner {
+	}
+	&__item-link{
+		width: 50%;
+	}
+	&__item-link-ico {
+		img {
+			width: 8px;
+			height: 17px;
+		}
+	}
+
+}
