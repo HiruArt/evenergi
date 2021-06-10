@@ -1,0 +1,96 @@
+@import "../modules/_help";
+
+.header{
+  background: #00283B;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__inner{
+    background: white;
+    position: relative;
+    top: 40px;
+  }
+
+  &__content{
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo{
+
+  }
+
+  &__logo-link{
+
+  }
+
+  &__menu{
+
+  }
+
+  &__menu-btn{
+
+    @include from-1024{
+      display: none;
+    }
+  }
+
+  &__menu-btn-i{
+    width: 50px;
+    height: 50px;
+  }
+
+  &__menu-btn-ico{
+
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__menu-btn__burger{
+
+  }
+
+  &__menu-btn__close{
+
+  }
+
+}
+
+
+
+.nav-menu{
+
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+
+  }
+
+  &__link{
+    padding: 15px 13px;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #004B70;
+    transition: .3s all;
+
+    &:hover{
+      color: #FF8D00;
+    }
+
+    &.active{
+      background: #E4E4E4;
+      font-weight: 800;
+      color: #FF8D00;
+    }
+  }
+}
