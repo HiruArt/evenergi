@@ -1,0 +1,16 @@
+@import "_import";
+
+* {
+  box-sizing: border-box;
+  //font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.main-wrap{
+  overflow: hidden;
+  position: relative;
+  //min-height: calc(100vh - 214px);
+}
+
+

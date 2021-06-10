@@ -1,0 +1,40 @@
+//include _mixins
+
+block vars
+  - var cacheFix = parseInt(Math.random()*1000)
+
+doctype html
+html(lang="uk")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    title Evenergi
+    meta(name="description", content='description content')
+
+    //favicon
+    link(rel="apple-touch-icon" sizes="180x180" href="./img/favicon_img/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./img/favicon_img/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./img/favicon_img/favicon-16x16.png")
+    link(rel="manifest" href="./img/favicon_img/site.webmanifest")
+    link(rel="mask-icon" href="./img/favicon_img/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="theme-color" content="#ffffff")
+
+
+    link(rel='stylesheet', href='./css/main.css?' + cacheFix)
+
+  body(class="page " + pageClass)
+    .page__wrapper#page-wrapper
+      include modules/_header
+
+      main.page__content
+        block content
+
+      include modules/_footer
+
+    block scripts
+      script(src='./js/libs/jquery.min.js')
+      script(src='./js/libs/swiper-bundle.min.js')
+      script(src='./js/libs/lazysizes.min.js')
+      script(src='./js/main.js?' + cacheFix)
