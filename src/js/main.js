@@ -39,19 +39,18 @@ $(document).ready(function () {
 	});
 	// cookie end
 
+
 	//menu start
-	$('.js_mobile-menu').click(function (e) {
-		e.preventDefault();
-		$('.menu').addClass("__active");
-		$(this).toggleClass("__hidden");
-		$(".menu__close").addClass("__active")
+	$('.js_mobile-menu').click(function () {
+		$(this).closest('header').toggleClass('menu-open');
+		$('body').toggleClass('oh');
 	});
 
-	$('.menu__close').click(function (e) {
-		e.preventDefault();
-		$('.menu').removeClass("__active");
-		$(".js_mobile-menu").toggleClass("__hidden");
-		$(this).removeClass("__active");
+	$(document).on('click', function (e) {
+		if($(e.target).closest('.header.menu-open').length === 0 && $('.header.menu-open').length > 0 && $(e.target).closest('.js_mobile-menu').length === 0) {
+			$('.header').removeClass('menu-open');
+			$('body').removeClass('oh');
+		}
 	});
 	//menu end
 

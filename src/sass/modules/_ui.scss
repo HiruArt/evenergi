@@ -120,12 +120,20 @@
 	margin: 0 -20px;
 	display: flex;
 	flex-wrap: wrap;
+
+	@include for-1400{
+		margin: 0 -15px;
+	}
 }
 
 .custom-col{
 	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
+
+	@include for-1400{
+		padding: 0 15px;
+	}
 }
 .col-25{
 	width: 25% !important;

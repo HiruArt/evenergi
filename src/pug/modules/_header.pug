@@ -5,25 +5,35 @@ header.header
         a(href="javascript:void(0)").header__logo-link
           include ../../img/logo-color.svg
       .header__menu
+        .header__logo.header__logo--mobile
+          a(href="javascript:void(0)").header__logo-link
+            include ../../img/logo-color.svg
+
         nav.nav-menu
           ul.nav-menu__list.custom-row
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link Who We Are
+              a(href="javascript:void(0)").nav-menu__link
+                span Who We Are
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link Services
+              a(href="javascript:void(0)").nav-menu__link
+                span Services
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link.active Channel Partners
+              a(href="javascript:void(0)").nav-menu__link.active
+                span Channel Partners
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link Knowledge Hub
+              a(href="javascript:void(0)").nav-menu__link
+                span Knowledge Hub
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link Careers
+              a(href="javascript:void(0)").nav-menu__link
+                span Careers
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link Contact Us
+              a(href="javascript:void(0)").nav-menu__link
+                span Contact Us
 
-        .header__menu-btn
-          a(href="javascript:void(0)").header__menu-btn-i.js_mobile-menu
-            .header__menu-btn-ico.header__menu-btn__burger
-              include ../../img/ico/burger.svg
-            .header__menu-btn-ico.header__menu-btn__close
-              include ../../img/ico/close.svg
+      .header__menu-btn
+        a(href="javascript:void(0)").header__menu-btn-i.js_mobile-menu
+          .header__menu-btn-ico.header__menu-btn__burger
+            include ../../img/ico/burger.svg
+          .header__menu-btn-ico.header__menu-btn__close
+            include ../../img/ico/close.svg
 
