@@ -85,7 +85,6 @@
 	}
 
 	&__info-row {
-		font-family: "Montserrat", sans-serif;
 		font-size: 20px;
 		line-height: 28px;
 		color: #fff;
@@ -117,6 +116,9 @@
 			@include for-800 {
 				width: 33% !important;
 			}
+			@include for-680{
+				width: 100% !important;
+			}
 		}
 	}
 
@@ -124,7 +126,6 @@
 	}
 
 	&__col-title {
-		font-family: "Montserrat", sans-serif;
 		font-weight: 600;
 		font-size: 36px;
 		text-transform: uppercase;
@@ -145,6 +146,9 @@
 
 	&__col-item {
 		margin-bottom: 50px;
+	@include for-992{
+		margin-bottom: 20px;
+	}
 	}
 
 	&__col-link{
@@ -155,11 +159,9 @@
 
 		@include for-1600 {
 			font-size: 18px;
-			line-height: 50px;
 		}
 
 		@include for-680{
-			line-height: 30px;
 		}
 
 		&:hover {
@@ -180,7 +182,6 @@
 	}
 
 	&__country {
-		font-family: "Montserrat", sans-serif;
 		font-size: 24px;
 		line-height: 34px;
 		color: #fff;
@@ -195,7 +196,6 @@
 	}
 
 	&__address {
-		font-family: "Montserrat", sans-serif;
 		font-size: 20px;
 		line-height: 30px;
 		color: #fff;

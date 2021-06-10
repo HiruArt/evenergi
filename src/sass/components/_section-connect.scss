@@ -1,0 +1,55 @@
+.section-connect {
+	background-color: #00283B;
+	position: relative;
+
+	background-image: url("../img/connect-bg.svg");
+	background-repeat: no-repeat;
+	background-size: 962px;
+	background-position: 112% -60px;
+	@include for-1600{
+		background-size: 700px;
+	}
+	@include for-1100{
+		background-position: 190% -60px;
+	}
+	@include for-992{
+		background-position: 175% -60px;
+		background-size: 625px;
+	}
+	@include for-680{
+		background-position: 0 -60px;
+	}
+
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		min-height: 530px;
+	}
+	&__title{
+		color: #fff;
+		font-size: 42px;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 66px;
+		@include for-800{
+			margin-bottom: 25px;
+			font-size: 32px;
+		}
+	}
+	&__subtitle{
+		font-size: 30px;
+		margin-bottom: 76px;
+		color: #fff;
+		@include for-800{
+			margin-bottom: 40px;
+			font-size: 22px;
+		}
+	}
+	&__btn{
+		color: #fff;
+	}
+}
