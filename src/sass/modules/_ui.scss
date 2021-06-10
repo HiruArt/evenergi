@@ -108,7 +108,28 @@
 		max-width: 1200px;
 	}
 
+}
 
+.site-container-half{
+	max-width: calc(50vw - ((100vw - 1600px) / 2));
+	width: 100%;
+	padding: 0 15px;
+
+	@include for-1600{
+		max-width: calc(50vw - ((100vw - 1330px) / 2));
+	}
+
+	@include for-1300{
+		max-width: calc(50vw - ((100vw - 1200px) / 2));
+	}
+
+	&--left{
+		margin-left: auto;
+	}
+
+	&--right{
+		margin-right: auto;
+	}
 }
 
 
@@ -178,6 +199,7 @@
 		&:hover{
 			color: #870058;
 			background: white;
+			border-color: #870058;
 		}
 	}
 	&--yellow{
@@ -187,6 +209,15 @@
 		&:hover{
 			color: #FF8D00;
 			background: white;
+			border-color: #FF8D00;
 		}
+	}
+}
+
+div[data-tab-content]{
+	display: none;
+
+	&.active{
+		display: flex;
 	}
 }

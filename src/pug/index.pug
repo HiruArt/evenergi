@@ -30,52 +30,48 @@ block content
             a(href="#").hero__btn-i.site-btn.site-btn--violet
               span FIND OUT MORE
 
-      .btabs
-        .btabs__inner
-          .btabs__head
-            .btabs__tab.site-container
-              .btabs__tab-item
-                a(href="javascript:void(0)" data-tab-name="tab1").btabs__tab-link.active BUSES
-              .btabs__tab-item
-                a(href="javascript:void(0)" data-tab-name="tab2").btabs__tab-link PUBLIC SECTOR
-              .btabs__tab-item
-                a(href="javascript:void(0)" data-tab-name="tab3").btabs__tab-link LOGISTICS
-              .btabs__tab-item
-                a(href="javascript:void(0)" data-tab-name="tab4").btabs__tab-link ELECTRICITY NETWORK OPERATORS
-              .btabs__tab-item
-                a(href="javascript:void(0)" data-tab-name="tab5").btabs__tab-link UTILITIES
-          .btabs__boyd.site-container
-            .btabs__content(data-tab-content="tab1")
-              .btabs__info
-                .btabs__text
-                .btabs__btn
-                  a(href="#").hero__btn-i.site-btn.site-btn--violet
-                    span LEARN MORE
+    .section-btabs
+      .section-btabs__inner
+        .section-btabs__head
+          .section-btabs__tab.site-container
+            .section-btabs__tab-item
+              a(href="javascript:void(0)" data-tab-name="tab1").section-btabs__tab-link.active BUSES
+            .section-btabs__tab-item
+              a(href="javascript:void(0)" data-tab-name="tab2").section-btabs__tab-link PUBLIC SECTOR
+            .section-btabs__tab-item
+              a(href="javascript:void(0)" data-tab-name="tab3").section-btabs__tab-link LOGISTICS
+            .section-btabs__tab-item
+              a(href="javascript:void(0)" data-tab-name="tab4").section-btabs__tab-link ELECTRICITY NETWORK OPERATORS
+            .section-btabs__tab-item
+              a(href="javascript:void(0)" data-tab-name="tab5").section-btabs__tab-link UTILITIES
+        .section-btabs__body.site-container
+          .section-btabs__content.active(data-tab-content="tab1")
+            .section-btabs__info
+              .section-btabs__text Helping bus operators to seize the opportunities and manage the risks of an eMobility future.
+              .section-btabs__btn
+                a(href="#").site-btn.site-btn--violet
+                  span LEARN MORE
 
-              .btabs__media
-                .btabs__media-i
-                  picture
-                    source(data-srcset="./img/buses-img.webp" type="image/webp")
-                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
+            .section-btabs__media
+              .section-btabs__media-i
+                picture
+                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
 
+          .section-btabs__content(data-tab-content="tab2")
+            .section-btabs__info
+              .section-btabs__text EXAMPLE TAB TWO Helping bus operators to seize the opportunities and manage the risks of an eMobility future.
+              .section-btabs__btn
+                a(href="#").site-btn.site-btn--violet
+                  span LEARN MORE
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            .section-btabs__media
+              .section-btabs__media-i
+                picture
+                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/buses-img.png" alt="img" width="1024" height="580" style="transform: scale(-1, 1);").lazyload
 
     .section-slider
       .section-slider__inner.site-container
@@ -97,64 +93,10 @@ block content
                     picture
                       img.lazyload(src="img/arrow-right.svg" alt="img")
 
-
-
-
-
-
-
-
       .section-slider__info We work with fleets, the public sector and energy distributors across the globe to accelerate their transition to zero emissions transport.
 
       .section-slider__btn
         a(href='#').site-btn see more
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .section-clients
       .section-clients__inner.site-container
@@ -177,34 +119,42 @@ block content
               picture
                 img.lazyload(src="img/Ausgrid.png" alt="img")
 
-
-        .section-clients__testimonials
-          .section-clients__testimonials-inner
-            .section-clients__testimonials-left
+    .section-clients__testimonials
+      .section-clients__testimonials-inner
+        .section-clients__testimonials-left
+          .site-container-half.site-container-half--left
+            .section-clients__testimonials-content
               .section-clients__testimonials-title WORK WITH US
               .section-clients__testimonials-rating
                 .section-clients__testimonials-item
-                  .section-clients__testimonials-number 450
+                  .section-clients__testimonials-number
+                    span#counter01(data-max-count="450") 450
                   .section-clients__testimonials-rate
                   .section-clients__testimonials-text fleets using our platforms
 
                 .section-clients__testimonials-item
-                  .section-clients__testimonials-number 10,000+
+                  .section-clients__testimonials-number
+                    span#counter02(data-max-count="1000") 1000
+                    | +
                   .section-clients__testimonials-rate
                   .section-clients__testimonials-text vehicles analysed
 
                 .section-clients__testimonials-item
-                  .section-clients__testimonials-number 1200
+                  .section-clients__testimonials-number
+                    span#counter03(data-max-count="1200") 1200
                   .section-clients__testimonials-rate
                   .section-clients__testimonials-text postcodes mapped for future charging demand
 
                 .section-clients__testimonials-item
-                  .section-clients__testimonials-number 150
+                  .section-clients__testimonials-number
+                    span#counter04(data-max-count="150") 150
                   .section-clients__testimonials-rate
                   .section-clients__testimonials-text public sector agencies using our platforms
 
 
-            .section-clients__testimonials-right
+        .section-clients__testimonials-right
+          .site-container-half.site-container-half--right
+            .section-clients__testimonials-content
               .section-clients__testimonials-title Testimonials
               .section-clients__testimonials-comment
                 .section-clients__testimonials-ico
@@ -213,54 +163,32 @@ block content
                 .section-clients__testimonials-text.section-clients__testimonials-text--bold Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
                 .section-clients__testimonials-author Name Surname, Job Title, <br>Company Name
 
+    .section__logo-row
+      .section__logo-title AS SEEN IN
+      .section__logo-items
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
 
 
-  .section__logo-row
-          .section__logo-title AS SEEN IN
-          .section__logo-items
-            .section__logo-item
-              picture
-                img.lazyload(src="img/Ausgrid.png" alt="img")
-            .section__logo-item
-              picture
-                img.lazyload(src="img/Ausgrid.png" alt="img")
-            .section__logo-item
-              picture
-                img.lazyload(src="img/Ausgrid.png" alt="img")
-            .section__logo-item
-              picture
-                img.lazyload(src="img/Ausgrid.png" alt="img")
-            .section__logo-item
-              picture
-                img.lazyload(src="img/Ausgrid.png" alt="img")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .section-connect
-      .section-connect__inner.site-container
-        .section-connect__title WORK WITH US
-        .section-connect__subtitle Get in touch to find out more about how we can help.
-        .section-connect__btn
-          a(href='#').site-btn.site-btn--yellow LET’S CONNECT
+    .section-connect
+        .section-connect__inner.site-container
+          .section-connect__title WORK WITH US
+          .section-connect__subtitle Get in touch to find out more about how we can help.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
 
 
 

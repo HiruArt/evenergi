@@ -1,0 +1,91 @@
+@import "../modules/_help";
+
+.section-btabs{
+	position: relative;
+	overflow: hidden;
+
+	&__inner{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__head{
+		background-color: #00283B;
+	}
+
+	&__tab{
+		display: flex;
+		border-top: 1px solid white;
+		justify-content: space-between;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	&__tab-item{
+
+	}
+
+	&__tab-link{
+
+	}
+
+	&__body{
+
+	}
+
+	&__content{
+		display: flex;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&__info{
+		max-width: 755px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: 25px;
+	}
+
+	&__text{
+		font-size: 28px;
+		padding-bottom: 50px;
+		color: #666666;
+	}
+
+	&__btn{
+
+	}
+
+	&__media{
+		width: 100%;
+	}
+
+	&__media-i{
+		width: calc(100% + ( (100vw - 1600px) / 2 ) );
+		display: flex;
+		position: relative;
+		left: 0;
+		top: 0;
+
+		@include for-1600{
+			width: calc(100% + ( (100vw - 1600px) / 2 ) );
+		}
+
+		@include for-1300{
+			width: calc(100% + ( (100vw - 1600px) / 2 ) );
+		}
+
+		picture{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+}
