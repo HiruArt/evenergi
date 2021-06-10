@@ -2,27 +2,31 @@ footer.footer
   .footer__inner.site-container
     .footer__top
       .footer__logo
-        .footer__logo-ico
+        a(href="#").footer__logo-ico
           include ../../img/ico/footer-logo.svg
       .footer__social
         .footer__social-item
           .footer__social-ico
-            include ../../img/ico/footer-text.svg
+            a(href="#").footer__social-link
+              include ../../img/ico/footer-text.svg
         .footer__social-item
           .footer__social-ico
-            include ../../img/ico/footer-linked.svg
+            a(href="#").footer__social-link
+              include ../../img/ico/footer-linked.svg
         .footer__social-item
           .footer__social-ico
-            include ../../img/ico/footer-twitter.svg
+            a(href="#").footer__social-link
+              include ../../img/ico/footer-twitter.svg
         .footer__social-item
           .footer__social-ico
-            include ../../img/ico/footer-faceb.svg
+            a(href="#").footer__social-link
+              include ../../img/ico/footer-faceb.svg
     .footer__center.footer__row
       .footer__info
         p.footer__info-row Our industry leading software offers zero emission transport transition planning that provides a holistic, strategic view that’s guided by processes as well as people.
         p.footer__info-row We’re here each step of the way to ensure reduced carbon emissions and costs for you, ensuring your people are productive, safe and happy.
       .footer__columns.custom-row
-        .footer__column.custom-col
+        .footer__column.custom-col.col-25
           .footer__column-inner
             .footer__col-title Navigation
             ul.footer__col-list
@@ -67,7 +71,7 @@ footer.footer
     .footer__bottom.footer__row
       .footer__info.footer__info.empty
       .footer__columns.custom-row
-        .footer__column.custom-col.empty
+        .footer__column.custom-col.empty.col-25
         .footer__column.custom-col
           .footer__column-inner
             .footer__country Australia

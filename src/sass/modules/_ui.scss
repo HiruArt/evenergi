@@ -97,17 +97,15 @@
 	width: 100%;
 	position: relative;
 
-	@include for-1600 {
-		max-width: 1016px;
+
+	@include for-992{
+		max-width: 700px;
 	}
 
-	@include for-1100 {
-		max-width: 830px;
+	@include for-800{
+		max-width: 100%;
 	}
 
-	@include for-992 {
-		max-width: 665px;
-	}
 }
 
 
@@ -125,4 +123,7 @@
 	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
+}
+.col-25{
+	width: 25% !important;
 }
