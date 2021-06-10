@@ -145,8 +145,8 @@
 	font-weight: 700;
 	background: #00283B;
 	color: white;
-	padding: 14px;
-	border-radius: 30px;
+	padding: 16px 30px;
+	border-radius: 50px;
 	cursor: pointer;
 	border: 2px solid #00283B;
 	transition: .3s all ease-in;
@@ -157,6 +157,8 @@
 
 	@include for-1200{
 		font-size: 16px;
+
+		padding: 8px 15px;
 	}
 
 	span{
@@ -175,6 +177,15 @@
 
 		&:hover{
 			color: #870058;
+			background: white;
+		}
+	}
+	&--yellow{
+		background: #FF8D00;
+		border-color: #FF8D00;
+
+		&:hover{
+			color: #FF8D00;
 			background: white;
 		}
 	}

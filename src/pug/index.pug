@@ -30,6 +30,35 @@ block content
             a(href="#").hero__btn-i.site-btn.site-btn--violet
               span FIND OUT MORE
 
+      .btabs
+        .btabs__inner
+          .btabs__head
+            .btabs__tab.site-container
+              .btabs__tab-item
+                a(href="javascript:void(0)" data-tab-name="tab1").btabs__tab-link.active BUSES
+              .btabs__tab-item
+                a(href="javascript:void(0)" data-tab-name="tab2").btabs__tab-link PUBLIC SECTOR
+              .btabs__tab-item
+                a(href="javascript:void(0)" data-tab-name="tab3").btabs__tab-link LOGISTICS
+              .btabs__tab-item
+                a(href="javascript:void(0)" data-tab-name="tab4").btabs__tab-link ELECTRICITY NETWORK OPERATORS
+              .btabs__tab-item
+                a(href="javascript:void(0)" data-tab-name="tab5").btabs__tab-link UTILITIES
+          .btabs__boyd.site-container
+            .btabs__content(data-tab-content="tab1")
+              .btabs__info
+                .btabs__text
+                .btabs__btn
+                  a(href="#").hero__btn-i.site-btn.site-btn--violet
+                    span LEARN MORE
+
+              .btabs__media
+                .btabs__media-i
+                  picture
+                    source(data-srcset="./img/buses-img.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
+
 
 
 
@@ -231,7 +260,7 @@ block content
         .section-connect__title WORK WITH US
         .section-connect__subtitle Get in touch to find out more about how we can help.
         .section-connect__btn
-          a(href='#').site-btn.site-btn--yellow Let's connect
+          a(href='#').site-btn.site-btn--yellow LET’S CONNECT
 
 
 
