@@ -7,3 +7,25 @@ block vars
 
 block content
   div.main-wrap
+    .hero.webp-img(
+      data-img="../img/web-dev/top-bg-image.jpg"
+      data-webp="../img/web-dev/top-bg-image.webp"
+      data-img-mobile="../img/web-dev/top-bg-image-mobile.jpg"
+      data-webp-mobile="../img/web-dev/top-bg-image-mobile.webp")
+      .hero__inner
+        .hero__bg
+          picture
+            source(data-srcset="./img/hero-home.webp" type="image/webp")
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="./img/hero-home.png" alt="img").lazyload
+        .hero__content.site-container
+          .hero__geom-wrap
+            .hero__geom
+              picture
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/hero-geom.svg" alt="img" width="1190" height="550").lazyload
+            h1.hero__title CREATING A BETTER TRANSPORT FUTURE
+          .hero__text Supporting ﬂeets, the public sector and energy distributors to accelerate the transition to zero emissions transport with our industry leading software and advisory services.
+          .hero__btn
+            a(href="#").hero__btn-i.site-btn.site-btn--violet
+              span FIND OUT MORE

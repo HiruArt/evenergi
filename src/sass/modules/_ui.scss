@@ -138,3 +138,44 @@
 .col-25{
 	width: 25% !important;
 }
+
+
+.site-btn{
+	font-size: 26px;
+	font-weight: 700;
+	background: #00283B;
+	color: white;
+	padding: 14px;
+	border-radius: 30px;
+	cursor: pointer;
+	border: 2px solid #00283B;
+	transition: .3s all ease-in;
+
+	@include for-1600{
+		font-size: 18px;
+	}
+
+	@include for-1200{
+		font-size: 16px;
+	}
+
+	span{
+		font-weight: 700;
+	}
+
+	&:hover{
+		border-color: white;
+		background: #00283B;
+		box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+	}
+
+	&--violet{
+		background: #870058;
+		border-color: #870058;
+
+		&:hover{
+			color: #870058;
+			background: white;
+		}
+	}
+}

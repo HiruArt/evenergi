@@ -92,6 +92,7 @@
   &.menu-open &__menu{
     @include for-1024{
       transform: translateX(0);
+      box-shadow: 2px 0 20px -10px black;
     }
   }
 
@@ -141,17 +142,29 @@
 
 .nav-menu{
 
+  @include for-1024{
+    position: relative;
+  }
+
   &__list{
     display: flex;
 
     @include for-1024{
       flex-direction: column;
       height: 100%;
+      padding-top: 40px;
+      width: 100%;
+      margin: 0;
+      min-height: calc(100vh - 75px);
     }
   }
 
   &__item{
-
+    @include for-1024{
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 0;
+    }
   }
 
   &__link{
@@ -168,10 +181,16 @@
       font-size: 14px;
     }
 
+    @include for-1024{
+      padding: 10px;
+      justify-content: flex-start;
+    }
+
     > span{
       position: relative;
       z-index: 1;
     }
+
 
     &:before{
       content: '';
@@ -193,6 +212,10 @@
         width: calc(100% + 20px);
         height: calc(100% + 24px);
       }
+
+      @include for-1024{
+        display: none;
+      }
     }
 
     &:hover{
@@ -213,6 +236,10 @@
         opacity: 1;
         visibility: visible;
         z-index: 1;
+
+        @include for-1024{
+          display: none;
+        }
       }
     }
   }
