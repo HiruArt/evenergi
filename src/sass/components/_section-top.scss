@@ -1,0 +1,102 @@
+@import "../modules/_help";
+
+.section-top{
+  position: relative;
+  width: 100%;
+  height: 335px;
+  overflow: hidden;
+  background-color: #004B70;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include for-1400{
+    height: 280px;
+  }
+
+  @include for-1024{
+    height: 200px;
+  }
+
+  //&__img{
+  //  position: absolute;
+  //  left: 50%;
+  //  top: 50%;
+  //  transform: translate(-50%, -50%) ;
+  //  //height: 100%;
+  //  //width: 100%;
+  //
+  //  picture{
+  //    display: flex;
+  //    justify-content: center;
+  //    align-items: center;
+  //    width: 100%;
+  //
+  //    img{
+  //
+  //    }
+  //  }
+  //}
+
+  &__inner{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  h1,
+  &__title{
+    font-size: 42px;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    position: relative;
+    color: white;
+    margin-top: 0;
+
+    @include for-1600{
+      font-size: 34px;
+    }
+
+    @include for-1400{
+      font-size: 28px;
+    }
+
+    @include for-1024{
+      font-size: 20px;
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 530px;
+      height: 4px;
+      background: white;
+    }
+  }
+
+  &__desk{
+    color: white;
+    font-size: 28px;
+    max-width: 530px;
+
+    @include for-1600{
+      font-size: 20px;
+    }
+
+    @include for-1400{
+      font-size: 16px;
+    }
+
+    @include for-1024{
+      font-size: 14px;
+    }
+  }
+}
