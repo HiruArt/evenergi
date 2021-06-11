@@ -112,17 +112,18 @@
 		&:last-child{
 			margin-bottom: 0;
 		}
-		&.col-25 {
+		&.custom-col--25 {
 			@include for-800 {
-				width: 33% !important;
+				width: 33%;
 			}
 			@include for-680{
-				width: 100% !important;
+				width: 100%;
 			}
 		}
 	}
 
 	&__column-inner {
+
 	}
 
 	&__col-title {
