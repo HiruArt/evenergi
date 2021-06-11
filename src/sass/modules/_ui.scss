@@ -176,6 +176,14 @@
 	cursor: pointer;
 	border: 2px solid #00283B;
 	transition: .3s all ease-in;
+	display: flex;
+	width: fit-content;
+	min-width: 260px;
+	justify-content: center;
+
+	@include for-1024{
+		min-width: 150px;
+	}
 
 	@include for-1600{
 		font-size: 18px;

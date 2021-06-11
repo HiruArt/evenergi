@@ -13,3 +13,43 @@ block content
       .section-top__inner.site-container
         h1.section-top__title CONTACT
         .section-top__desk Don’t hesitate to contact us by filling out the form.
+
+    .section-request
+      .section-request__inner.site-container
+        .section-request__title.section-title PURPOSE OF THE REQUEST:
+        .section-request__form.site-form
+          form(action="#")
+            .section-request__form-title NEW PROJECT REQUEST
+              .site-form__row
+                label
+                  input(type="text" placeholder="WHAT’S YOUR FULL NAME?")
+              .site-form__row
+                label
+                  input(type="text" placeholder="WHAT ORGANISATION ARE YOU WITH?")
+              .site-form__row
+                label
+                  input(type="email" placeholder="WHAT’S YOUR EMAIL?")
+              .site-form__row
+                label
+                  input(type="tel" placeholder="WHAT’S YOUR BEST CONTACT NUMBER?")
+              .site-form__row
+                label
+                  input(type="text" placeholder="WHAT’S YOUR ENQUIRY?")
+
+              .site-form__btn-submit
+                button(type="submit" value="submit" style="display: none;")
+                a(href="javascript:void(0);").site-form__submit.site-btn.site-btn--yellow SUBMIT
+        .section-request__media
+          .section-request__media-title MEDIA <br>
+            | SOMETHING ELSE?
+          .section-request__text TO VIEW OR ENQUIRE ABOUT AVAILABLE POSITIONS.
+            a(href="#") EXPLORE CAREERS
+
+
+    .section-connect
+      .section-connect__inner.site-container
+        .section-connect__text-wrapper
+          .section-connect__title.section-title.section-title--secondary WORK WITH US
+          .section-connect__subtitle Get in touch to find out more about how we can help.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
