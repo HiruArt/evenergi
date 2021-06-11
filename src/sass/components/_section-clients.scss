@@ -116,6 +116,9 @@
 		@include for-1400 {
 			font-size: 36px;
 		}
+		@include for-680{
+			font-size: 28px;
+		}
 	}
 
 	&__testimonials-rate {
@@ -148,9 +151,6 @@
 		0% {
 			width: 0%;
 		}
-		//50% {
-		//	width: 50%;
-		//}
 		100% {
 			width: 100%;
 		}
@@ -159,6 +159,13 @@
 	&__testimonials-text {
 		font-size: 30px;
 		color: #fff;
+		@include for-1400 {
+			font-size: 20px;
+		}
+
+		@include for-680{
+			font-size: 18px;
+		}
 	}
 
 	&__testimonials-comment {
@@ -178,12 +185,6 @@
 		}
 	}
 
-	&__testimonials-text {
-		font-size: 30px;
-		@include for-1400 {
-			font-size: 20px;
-		}
-	}
 
 	&__testimonials-text--bold {
 		font-size: 36px;
@@ -213,7 +214,7 @@
 			height: auto;
 		}
 		@include for-680{
-			max-width: 30px;
+			max-width:25px;
 		}
 	}
 

@@ -67,6 +67,11 @@
 			padding-left: 25px;
 			padding-right: 25px;
 		}
+		&:hover{
+			.section-slider__item-logo img{
+				filter: grayscale(0);
+			}
+		}
 	}
 
 	&__item-logo {
@@ -78,6 +83,8 @@
 
 		img {
 			width: 100%;
+			filter: grayscale(1);
+			transition: .3s;
 		}
 	}
 
