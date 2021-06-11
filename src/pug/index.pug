@@ -2,8 +2,8 @@ extends _layout
 
 block vars
   - var pageTitle = "Home page";
-  - var pageClass = "homepage";
-  - var pageActive = "homepage";
+  - var pageClass = "home-page";
+  - var pageActive = "home-page";
 
 block content
   div.main-wrap
@@ -15,7 +15,8 @@ block content
       .hero__inner
         .hero__bg
           picture
-            source(data-srcset="./img/hero-home.webp" type="image/webp")
+            source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/hero-home.webp" type="image/webp")
             img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
               data-src="./img/hero-home.png" alt="img").lazyload
         .hero__content.site-container
@@ -55,7 +56,8 @@ block content
             .section-btabs__media
               .section-btabs__media-i
                 picture
-                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/buses-img.webp" type="image/webp")
                   img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
 
@@ -69,7 +71,8 @@ block content
             .section-btabs__media
               .section-btabs__media-i
                 picture
-                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/buses-img.webp" type="image/webp")
                   img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="./img/buses-img.png" alt="img" width="1024" height="580" style="transform: scale(-1, 1);").lazyload
 
@@ -82,7 +85,8 @@ block content
             .section-btabs__media
               .section-btabs__media-i
                 picture
-                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/buses-img.webp" type="image/webp")
                   img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
           .section-btabs__content(data-tab-content="tab4")
@@ -94,7 +98,8 @@ block content
             .section-btabs__media
               .section-btabs__media-i
                 picture
-                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/buses-img.webp" type="image/webp")
                   img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
           .section-btabs__content(data-tab-content="tab5")
@@ -106,7 +111,8 @@ block content
             .section-btabs__media
               .section-btabs__media-i
                 picture
-                  source(data-srcset="./img/buses-img.webp" type="image/webp")
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/buses-img.webp" type="image/webp")
                   img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                     data-src="./img/buses-img.png" alt="img" width="1024" height="580").lazyload
 
@@ -247,7 +253,7 @@ block content
 
     .section-slider
       .section-slider__inner.site-container
-        .section-slider__title SUCCESS STORIES
+        .section-slider__title.section-title.center SUCCESS STORIES
         .section-slider__wrap
           .section-slider__container.js_swiper_one
             .section-slider__wrapper.swiper-wrapper
@@ -384,7 +390,7 @@ block content
                     span#counter02(data-max-count="1000") 1000
                     | +
                   .section-clients__testimonials-rate
-                    .section-clients__testimonials-rating-inner.w-25
+                    .section-clients__testimonials-rating-inner.w-80
                   .section-clients__testimonials-text vehicles analysed
 
                 .section-clients__testimonials-item

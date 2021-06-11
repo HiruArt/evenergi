@@ -14,6 +14,13 @@
   //min-height: calc(100vh - 214px);
 }
 
+.page__wrapper{
+
+  @include for-1024{
+    margin-top: 60px;
+  }
+}
+
 
 
 

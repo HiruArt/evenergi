@@ -2,7 +2,9 @@ header.header
   .header__inner
     .header__content.site-container
       .header__logo
-        a(href="javascript:void(0)").header__logo-link
+        a(href=(pageActive !== "home-page"
+                ? "./"
+                : 'javascript:void(0);')).header__logo-link
           include ../../img/logo-color.svg
       .header__menu
         .header__logo.header__logo--mobile
@@ -12,13 +14,16 @@ header.header
         nav.nav-menu
           ul.nav-menu__list.custom-row
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link
+              a(href="javascript:void(0)"
+                class=(pageActive === "who-we-are-page"
+                    ? "nav-menu__link active"
+                    : 'nav-menu__link'))
                 span Who We Are
             li.nav-menu__item.custom-col
               a(href="javascript:void(0)").nav-menu__link
                 span Services
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link.active
+              a(href="javascript:void(0)").nav-menu__link
                 span Channel Partners
             li.nav-menu__item.custom-col
               a(href="javascript:void(0)").nav-menu__link
@@ -27,7 +32,10 @@ header.header
               a(href="javascript:void(0)").nav-menu__link
                 span Careers
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link
+              a(href="./contact.html"
+                class=(pageActive === "contact-page"
+                  ? "nav-menu__link active"
+                  : 'nav-menu__link'))
                 span Contact Us
 
       .header__menu-btn

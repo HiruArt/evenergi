@@ -268,6 +268,7 @@ $(document).ready(function () {
 		if (counterOffsetTop < $(document).scrollTop() + 300
 			&& counterFlag) {
 			showCounterChange();
+			$('.section-clients__testimonials-rating-inner').addClass('animate')
 			counterFlag = false;
 		}
 	}
