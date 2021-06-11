@@ -3,7 +3,7 @@
 	padding-bottom: 110px;
 	@include for-800 {
 		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 0px;
 	}
 
 	&__inner {
@@ -17,11 +17,17 @@
 
 	&__testimonials {
 		margin-bottom: 85px;
+		@include for-800 {
+			margin-bottom: 20px;
+		}
 
 	}
 
 	&__testimonials-inner {
 		display: flex;
+		@include for-800 {
+			display: block;
+		}
 	}
 
 	&__testimonials-right,
@@ -29,6 +35,21 @@
 		padding-top: 90px;
 		padding-bottom: 90px;
 		width: 50%;
+		@include for-800 {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@include for-800 {
+			width: 100%;
+		}
+
+		.site-container-half {
+			@include for-800 {
+				margin-left: 0;
+				margin-right: 0;
+				max-width: 100%;
+			}
+		}
 	}
 
 	&__testimonials-left {
@@ -37,6 +58,10 @@
 		@include for-1400 {
 			padding-right: 40px;
 		}
+		@include for-800 {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	&__testimonials-right {
@@ -44,6 +69,10 @@
 
 		@include for-1400 {
 			padding-left: 40px;
+		}
+		@include for-800 {
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 
@@ -61,12 +90,14 @@
 	&__testimonials-rating {
 		border-top: 3px solid #fff;
 		padding-top: 80px;
-		//padding-right: 80px;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 140px;
 		@include for-1400 {
 			gap: 50px;
+		}
+		@include for-680 {
+			gap: 25px;
 		}
 	}
 
@@ -75,6 +106,9 @@
 		//padding-right: 15px;
 		@include for-1400 {
 			width: calc(50% - 25px);
+		}
+		@include for-680 {
+			width: 100%;
 		}
 	}
 
@@ -88,7 +122,41 @@
 	}
 
 	&__testimonials-rate {
+		height: 15px;
+		width: 100%;
 		margin-bottom: 35px;
+		background-color: #fff;
+	}
+
+	&__testimonials-rating-inner {
+		height: 15px;
+		width: 0;
+		background-color: #19B3FF;
+
+		&.animate {
+			animation: increase-rate forwards 5s ease-in-out;
+		}
+		&.w-25{
+			max-width: 25%;
+		}
+		&.w-50{
+			max-width: 50%;
+		}
+		&.w-80{
+			max-width: 80%;
+		}
+	}
+
+	@keyframes increase-rate {
+		0% {
+			width: 0%;
+		}
+		//50% {
+		//	width: 50%;
+		//}
+		100% {
+			width: 100%;
+		}
 	}
 
 	&__testimonials-text {
@@ -106,7 +174,11 @@
 
 	&__testimonials-text-wrapper {
 		display: flex;
-		position: relative;
+		border-top: 3px solid #E4E4E4;
+		padding-top: 140px;
+		@include for-800 {
+			padding-top: 50px;
+		}
 	}
 
 	&__testimonials-text {
@@ -121,11 +193,11 @@
 		font-weight: 600;
 		color: #19B3FF;
 		margin-bottom: 60px;
-		padding-left: 105px;
+		padding-left: 37px;
 		text-align: start;
 		@include for-1400 {
 			font-size: 24px;
-			padding-left: 60px;
+			padding-left: 20px;
 		}
 		@include for-680 {
 			margin-bottom: 30px;
@@ -133,26 +205,26 @@
 	}
 
 	&__testimonials-quotes {
-		position: absolute;
+		position: relative;
 		top: -15px;
-		width: 58px;
+		width: 100%;
+		max-width: 60px;
 		height: auto;
 		@include for-1400 {
 			top: -7px;
-			width: 33px;
 			height: auto;
 		}
 	}
 
 	&__testimonials-author {
+		padding-top: 55px;
 		font-size: 28px;
 		font-weight: 500;
 		color: #004B70;
 		text-align: start;
-		padding-left: 105px;
+
 		@include for-1400 {
 			font-size: 20px;
-			padding-left: 60px;
 
 		}
 	}

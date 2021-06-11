@@ -271,6 +271,7 @@ $(document).ready(function () {
 			if (counterOffsetTop < $(document).scrollTop()
 				&& counterFlag) {
 				showCounterChange();
+				$('.section-clients__testimonials-rating-inner').addClass('animate')
 				counterFlag = false;
 			}
 		});
