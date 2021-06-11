@@ -240,9 +240,21 @@ div[data-tab-content]{
 	text-transform: uppercase;
 	color: #19B3FF;
 
+	@include for-1600{
+		font-size: 36px;
+	}
+
 	@include for-1200 {
 		font-size: 30px;
+		margin-bottom: 30px;
 	}
+
+	@include for-680{
+		font-size: 24px;
+	}
+
+
+
 
 	&--secondary{
 		color: #FF8D00;
@@ -255,17 +267,132 @@ div[data-tab-content]{
 
 
 .color-case{
-	
-	&.orange{
+	border-radius: 15px;
+	padding: 60px 25px 40px;
 
+	@include for-1600{
+		padding: 30px 15px;
+	}
+
+	&.orange{
+		background-color: #FF8D00;
 	}
 
 	&.violet{
-
+		background-color: #870058;
 	}
 
 	&.blue{
-
+		background-color: #19B3FF;
 	}
 
+}
+
+
+.site-tab{
+	display: flex;
+
+	&__wrapper{
+		margin-bottom: 45px;
+
+		@include for-1600{
+			margin-bottom: 30px;
+		}
+
+		@include for-1024{
+			position: relative;
+			padding: 0 15px;
+			left: -15px;
+			width: calc(100% + 30px);
+			overflow-x: auto;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		font-size: 16px;
+		color: #004B70;
+		transition: .3s all;
+		position: relative;
+		cursor: pointer;
+		margin-right: 60px;
+		white-space: nowrap;
+
+		@include for-1600{
+			margin-right: 30px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		@include for-1600 {
+			font-size: 14px;
+		}
+
+		@include for-1024 {
+			padding: 10px;
+			justify-content: flex-start;
+		}
+
+		> span {
+			position: relative;
+			z-index: 1;
+		}
+
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: calc(100% + 40px);
+			height: 100%;
+			transform: translate(-50%, -50%);
+			display: flex;
+			background: #E4E4E4;
+			opacity: 0;
+			visibility: hidden;
+			z-index: -1;
+			transition: .3s all;
+			border-radius: 30px;
+
+			@include for-1600{
+				width: calc(100% + 20px);
+			}
+		}
+
+		&:hover {
+			color: #FF8D00;
+
+			&:before {
+				opacity: 0.3;
+				visibility: visible;
+				z-index: 1;
+			}
+		}
+
+		&.active {
+			font-weight: 800;
+			color: #FF8D00;
+
+			span {
+				font-weight: 800;
+			}
+
+			&:before {
+				opacity: 1;
+				visibility: visible;
+				z-index: 1;
+			}
+		}
+	}
 }

@@ -2,30 +2,106 @@
 
 .section-problems{
   &__inner{
+    padding-top: 60px;
+    padding-bottom: 90px;
+    border-top: 4px solid #E4E4E4;
+    border-bottom: 4px solid #E4E4E4;
 
+    @include for-1400 {
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
   }
-  
+
   &__title{
-
+    margin-bottom: 50px;
   }
-  
+
   &__list{
 
   }
-  
+
   &__item{
+    width: 33.33333%;
+    display: flex;
 
+    @include for-1024{
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
-  
+
   &__case{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
+    @include for-1024{
+      flex-direction: row;
+      align-items: center;
+    }
   }
-  
+
   &__case-ico{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
+    @include from-1024{
+      margin-bottom: 50px;
+    }
+
+    @include for-1024{
+      max-width: 80px;
+    }
+
+    picture{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      object-fit: contain;
+
+      @include for-1600 {
+        width: 150px;
+        height: 150px;
+      }
+
+      @include for-1400 {
+        width: 120px;
+        height: 120px;
+      }
+
+      @include for-1024{
+        width: 80px;
+        height: 80px;
+      }
+    }
   }
-  
+
   &__case-text{
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: white;
+    width: 100%;
+    height: fit-content;
+
+    @include for-1600{
+      font-size: 18px;
+      line-height: 150%;
+
+      > br{
+        display: none;
+      }
+    }
+
+    @include for-1024{
+      padding-left: 15px;
+      font-size: 16px;
+    }
 
   }
 }
