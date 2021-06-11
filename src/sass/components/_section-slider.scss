@@ -1,6 +1,7 @@
 .section-slider {
 	padding-top: 55px;
 	padding-bottom: 110px;
+	padding-left: 94px;
 
 	@include for-800 {
 		padding-bottom: 50px;
@@ -8,14 +9,53 @@
 
 	&__inner {
 	}
-	&__item-link{
+
+	&__title {
+	}
+
+	&__container {
+	}
+
+	&__wrapper {
+	}
+
+	&__item {
+	}
+
+	&__item-logo {
+	}
+
+	&__item-title {
+	}
+
+	&__item-subtitle {
+	}
+
+	&__item-text {
+	}
+
+	&__item-author {
+	}
+
+	&__item-btn {
+	}
+
+	&__item-link {
 		width: 50%;
 	}
+
+	__item-link-text
 	&__item-link-ico {
 		img {
 			width: 8px;
 			height: 17px;
 		}
+	}
+
+	&__info {
+	}
+
+	&__btn {
 	}
 
 }
