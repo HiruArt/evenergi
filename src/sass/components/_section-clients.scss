@@ -16,10 +16,6 @@
 	}
 
 	&__testimonials {
-		margin-bottom: 85px;
-		@include for-800 {
-			margin-bottom: 20px;
-		}
 
 	}
 
@@ -73,6 +69,7 @@
 		@include for-800 {
 			padding-left: 0;
 			padding-right: 0;
+			padding-bottom: 0;
 		}
 	}
 
@@ -200,6 +197,7 @@
 			padding-left: 20px;
 		}
 		@include for-680 {
+			font-size: 16px;
 			margin-bottom: 30px;
 		}
 	}
@@ -214,6 +212,9 @@
 			top: -7px;
 			height: auto;
 		}
+		@include for-680{
+			max-width: 30px;
+		}
 	}
 
 	&__testimonials-author {
@@ -225,7 +226,9 @@
 
 		@include for-1400 {
 			font-size: 20px;
-
+		}
+		@include for-680{
+			font-size: 16px;
 		}
 	}
 

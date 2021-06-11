@@ -83,40 +83,28 @@ $(document).ready(function () {
 	//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	// slider start
-	// const swiper = new Swiper('.js_swiper_one', {
-	// 	loop: true,
-	// 	slidesPerView: 4,
-	// 	navigation: {
-	// 		nextEl: '.section__slider-nav-next',
-	// 		prevEl: '.section__slider-nav-prew',
-	// 	},
-	// 	pagination: {
-	// 		el: '.section__slider-nav-counter',
-	// 		type: 'fraction',
-	// 	},
-	// 	// Responsive breakpoints
-	// 	breakpoints: {
-	// 		320: {
-	// 			slidesPerView: 1.5,
-	// 		},
-	// 		680: {
-	// 			slidesPerView: 2.3,
-	// 		},
-	// 		768: {
-	// 			slidesPerView: 2.4,
-	// 		},
-	// 		1030: {
-	// 			slidesPerView: 2,
-	// 		},
-	// 		1440: {
-	// 			slidesPerView: 3,
-	// 		},
-	// 		1920: {
-	// 			slidesPerView: 4,
-	// 		}
-	// 	}
-	//
-	// });
+	const swiper1 = new Swiper('.js_swiper_one', {
+		loop: true,
+		slidesPerView: 4.5,
+		spaceBetween: 35,
+		// Responsive breakpoints
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2,
+			},
+			768: {
+				slidesPerView: 2.2,
+			},
+			1030: {
+				slidesPerView: 3.5,
+			},
+			1440: {
+				slidesPerView: 4.5,
+				spaceBetween: 35,
+
+			},
+		}
+	});
 
 
 	//scroll down start

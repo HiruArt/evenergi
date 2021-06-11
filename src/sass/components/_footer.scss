@@ -71,6 +71,9 @@
 	&__center {
 		padding: 65px 0 40px;
 		border-bottom: 3px solid #fff;
+		@include for-800{
+			padding: 25px 0 15px;
+		}
 	}
 
 	&__info {
@@ -82,16 +85,20 @@
 			max-width: 100%;
 			margin-bottom: 50px;
 		}
+		@include for-800{
+			margin-bottom: 15px;
+		}
 	}
 
 	&__info-row {
 		font-size: 20px;
-		line-height: 28px;
+		line-height: normal;
 		color: #fff;
 		max-width: 400px;
 
 		@include for-1400 {
 			max-width: 100%;
+			font-size: 16px;
 		}
 	}
 
@@ -99,6 +106,11 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		@include for-680{
+			&.custom-row {
+				margin: 0;
+			}
+		}
 	}
 
 	&__column {
@@ -108,11 +120,24 @@
 		@include for-680{
 			width: 100%;
 			margin-bottom: 16px;
+
+			&.custom-col {
+				padding: 0;
+			}
 		}
+
 		&:last-child{
 			margin-bottom: 0;
 		}
 		&.custom-col--25 {
+			width: 25%;
+
+			+ .custom-col{
+				@include from-1400 {
+					width: 40%;
+				}
+			}
+
 			@include for-800 {
 				width: 33%;
 			}
@@ -135,8 +160,13 @@
 
 		@include for-1600 {
 			font-size: 30px;
+			margin-bottom: 30px;
+		}
+		@include for-1400 {
+			margin-bottom: 15px;
 		}
 		@include for-680{
+			font-size: 24px;
 			margin-bottom: 16px;
 		}
 	}
@@ -147,9 +177,13 @@
 
 	&__col-item {
 		margin-bottom: 50px;
-	@include for-992{
-		margin-bottom: 20px;
-	}
+
+		@include for-1600 {
+			margin-bottom: 30px;
+		}
+		@include for-1400 {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__col-link{
@@ -160,6 +194,9 @@
 
 		@include for-1600 {
 			font-size: 18px;
+		}
+		@include for-1400 {
+			font-size: 16px;
 		}
 
 		@include for-680{
@@ -193,6 +230,10 @@
 			margin-bottom: 16px;
 			font-size: 20px;
 		}
+		@include for-1400 {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
 
 	}
 
@@ -203,6 +244,9 @@
 
 		@include for-1600 {
 			font-size: 16px;
+		}
+		@include for-1400{
+			font-size: 12px;
 		}
 	}
 

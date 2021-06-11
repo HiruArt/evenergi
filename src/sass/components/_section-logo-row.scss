@@ -7,7 +7,12 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		margin-top: 100px;
 		margin-bottom: 100px;
+		@include for-1400{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
 	}
 
 	&__logo-title {
@@ -53,7 +58,7 @@
 		}
 
 		&:last-child {
-			margin-right: 0;
+			//margin-right: 0;
 		}
 		img{
 			width: 100%;
