@@ -1,55 +1,116 @@
 .section-connect {
 	background-color: #00283B;
 	position: relative;
-
 	background-image: url("../img/connect-bg.svg");
 	background-repeat: no-repeat;
 	background-size: 962px;
 	background-position: 112% -60px;
-	@include for-1600{
+	@include for-1600 {
 		background-size: 700px;
 	}
-	@include for-1100{
+	@include for-1100 {
 		background-position: 190% -60px;
 	}
-	@include for-992{
+	@include for-992 {
 		background-position: 175% -60px;
 		background-size: 625px;
 	}
-	@include for-680{
+	@include for-680 {
 		background-position: 0 -60px;
+	}
+
+	&.bg-right {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #0071A4;
+		background-image: url("../img/connect-bg-light.svg");
+
+		background-position: 5% -60px;
+		@include for-1600 {
+			background-size: 700px;
+		}
+		@include for-1100 {
+			background-position: 5% -60px;
+		}
+		@include for-992 {
+			background-position: 5% -60px;
+			background-size: 625px;
+		}
+		@include for-680 {
+			background-position: 0 -60px;
+		}
 	}
 
 	&__inner {
 		position: relative;
 		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 530px;
+		gap: 120px;
+		@include for-1400 {
+			gap: 80px;
+		}
+		@include for-1100 {
+			gap: 30px;
+		}
+		@include for-680{
+			flex-wrap: wrap;
+			min-height: 350px;
+		}
+	}
+
+	&__image-wrapper {
+		width: calc(100vw - ((100vw - 1600px) - 120px));
+	}
+
+	&__image {
+		display: flex;
+		justify-content: flex-end;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__text-wrapper {
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		min-height: 530px;
 	}
-	&__title{
+
+	&__title {
+		width: 100%;
 		color: #fff;
 		font-size: 42px;
 		font-weight: 800;
 		text-transform: uppercase;
 		margin-bottom: 66px;
-		@include for-800{
+
+		@include for-800 {
 			margin-bottom: 25px;
-			font-size: 32px;
+			font-size: 26px;
+		}
+
+		&.mb-middle {
+			margin-bottom: 38px !important;
 		}
 	}
-	&__subtitle{
+
+	&__subtitle {
 		font-size: 30px;
 		margin-bottom: 76px;
 		color: #fff;
-		@include for-800{
+		@include for-800 {
 			margin-bottom: 40px;
-			font-size: 22px;
+			font-size: 18px;
 		}
 	}
-	&__btn{
+
+	&__btn {
+		width: 100%;
 		color: #fff;
 	}
 }

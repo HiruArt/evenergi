@@ -26,7 +26,10 @@ header.header
               a(href="javascript:void(0)").nav-menu__link
                 span Channel Partners
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link
+              a(href="./study.html"
+                class=(pageActive === "study-page"
+                  ? "nav-menu__link active"
+                  : 'nav-menu__link'))
                 span Knowledge Hub
             li.nav-menu__item.custom-col
               a(href="javascript:void(0)").nav-menu__link
