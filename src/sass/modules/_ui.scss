@@ -233,3 +233,22 @@ div[data-tab-content]{
 		display: flex;
 	}
 }
+
+.section-title{
+	font-size: 42px;
+	margin-bottom: 45px;
+	text-transform: uppercase;
+	color: #19B3FF;
+
+	@include for-1200 {
+		font-size: 30px;
+	}
+
+	&--secondary{
+		color: #FF8D00;
+	}
+
+	&.center{
+		text-align: center;
+	}
+}

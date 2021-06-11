@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 221.974">
+    <path d="M221,110.987A110,110,0,1,1,111.013,1,109.986,109.986,0,0,1,221,110.987"
+          style="fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px"/>
+    <path d="M191,110.987c0,60.758-35.822,109.987-79.99,109.987C66.822,220.974,31,171.745,31,110.987,31,50.256,66.822,1,111.01,1,155.178,1,191,50.256,191,110.987"
+          style="fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px"/>
+    <path d="M156,110.987c0,60.758-20.149,109.987-44.995,109.987S66,171.745,66,110.987C66,50.256,86.15,1,111.005,1s45,49.256,45,109.987"
+          style="fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px"/>
+    <path d="M111,155.986c-60.758,0-109.987-20.15-109.987-44.994S50.243,65.986,111,65.986c60.732,0,109.987,20.151,109.987,45.007S171.732,155.986,111,155.986"
+          style="fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px"/>
+    <path d="M41.239,39.752a12.5,12.5,0,1,1-12.5-12.5,12.5,12.5,0,0,1,12.5,12.5" style="fill:#2b4c6e"/>
+</svg>
