@@ -14,6 +14,8 @@
 	@include for-992 {
 		background-position: 175% -60px;
 		background-size: 625px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	@include for-680 {
 		background-position: 0 -60px;
@@ -48,15 +50,16 @@
 		justify-content: center;
 		min-height: 530px;
 		gap: 120px;
+
 		@include for-1400 {
 			gap: 80px;
 		}
 		@include for-1100 {
 			gap: 30px;
+			min-height: 300px !important;
 		}
 		@include for-680{
 			flex-wrap: wrap;
-			min-height: 350px;
 		}
 	}
 
