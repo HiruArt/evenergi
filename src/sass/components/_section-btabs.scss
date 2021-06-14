@@ -104,8 +104,13 @@
 	}
 
 	&__body{
+		min-height: 680px;
 
+		@include for-1800{
+			min-height: auto;
+		}
 	}
+
 
 	&__content{
 		display: flex;

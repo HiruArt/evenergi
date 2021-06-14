@@ -309,6 +309,35 @@ $(document).ready(function () {
 		}
 	});
 
+
+	//validation script
+	if($('#contact-form').length > 0) {
+		$('#contact-form').validate({
+			errorElement: "span",
+			rules: {
+				fullName: {
+					required: true,
+					minlength: 2
+				},
+				organisation: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					email: true,
+				},
+				phoneNumber: {
+					required: true,
+					number: true
+				},
+			}
+		});
+
+		$(document).on('click', '.js_submit-form-btn', function (e) {
+			$(this).siblings('[type="submit"]').click();
+		});
+	}
 });
 
 //script fro webp img and background
