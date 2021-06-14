@@ -13,6 +13,10 @@
 			margin-top: 50px;
 			margin-bottom: 50px;
 		}
+		@include for-680 {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__logo-title {
@@ -77,4 +81,8 @@
 	}
 }
 
-
+.service-page .section__logo-row {
+	@include for-680 {
+		margin-bottom: 0;
+	}
+}

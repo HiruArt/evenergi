@@ -54,6 +54,9 @@
 
 		&.position-center {
 			top: 350px;
+			@include for-680{
+				top: 0;
+			}
 		}
 
 		@include for-1600 {

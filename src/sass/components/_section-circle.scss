@@ -39,6 +39,10 @@
 	&__row {
 		display: flex;
 		justify-content: space-around;
+		&.mar-bot{
+			margin-bottom: 38px;
+		}
+
 		@include for-992 {
 			flex-wrap: wrap;
 		}
@@ -52,7 +56,18 @@
 		max-width: 290px;
 		margin: 0 15px;
 		height: 100%;
-
+		transition: .3s;
+		&.item-bg{
+			max-width: 395px;
+			padding:20px 40px;
+			border-radius: 12px;
+			@include for-800{
+				padding: 10px 15px;
+			}
+			&:hover{
+				background-color: #F3F3F3;
+			}
+		}
 		@include for-992 {
 			margin-top: 20px;
 			margin-bottom: 20px;
@@ -92,6 +107,7 @@
 	&__item-title {
 		width: 100%;
 		color: #004B70;
+		text-transform: uppercase;
 		font-size: 28px;
 		font-weight: 800;
 		margin-bottom: 10px;
