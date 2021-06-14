@@ -1,12 +1,16 @@
 .section-circle {
-	padding-top: 80px;
 	padding-bottom: 150px;
-	@include for-680 {
-		padding-top: 50px;
-		padding-bottom: 70px;
-	}
 
+	@include for-680 {
+		padding-bottom: 0;
+	}
 	&__inner {
+		padding-top: 80px;
+
+		@include for-680 {
+			padding-top: 30px;
+			padding-bottom: 0;
+		}
 	}
 
 	&__title {
@@ -14,6 +18,7 @@
 	}
 
 	&__title-info-wrapper {
+		font-size: 28px;
 		text-align: center;
 		margin-bottom: 80px;
 		@include for-992 {
@@ -23,8 +28,11 @@
 
 	&__title-info {
 		font-size: 28px;
-		@include for-992 {
-			font-size: 16px;
+		@include for-1600{
+			font-size: 20px;
+		}
+		@include for-1100 {
+			font-size: 14px;
 		}
 	}
 
@@ -49,6 +57,9 @@
 			margin-top: 20px;
 			margin-bottom: 20px;
 		}
+		@include for-680 {
+			margin: 20px 0;
+		}
 	}
 
 	&__item-img-wrapper {
@@ -71,7 +82,8 @@
 			height: 100%;
 			object-fit: cover;
 		}
-		@include for-800{
+
+		@include for-800 {
 			width: 200px;
 			height: 200px;
 		}
@@ -81,19 +93,21 @@
 		width: 100%;
 		color: #004B70;
 		font-size: 28px;
+		font-weight: 800;
 		margin-bottom: 10px;
 		text-align: start;
-		@include for-992{
-			font-size: 18px;
+		@include for-1100 {
+			font-size: 16px;
 		}
 	}
 
 	&__item-descr {
 		width: 100%;
 		font-size: 20px;
+		font-weight: 500;
 		margin-bottom: 40px;
 		text-align: start;
-		@include for-992{
+		@include for-1100 {
 			font-size: 14px;
 			margin-bottom: 25px;
 		}
@@ -109,8 +123,13 @@
 		color: #19B3FF;
 		font-size: 18px;
 		font-weight: 800;
-		@include for-992{
+		transition: .3s;
+		@include for-1100 {
 			font-size: 16px;
+		}
+
+		&:hover {
+			color: #870058;
 		}
 	}
 }

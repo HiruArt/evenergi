@@ -29,10 +29,10 @@ block content
             .section-heading__right-image-wrapper
               .section-heading__right-image
                 picture
-                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
-
-
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/study-2.webp" type="image/webp")
+                  img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/study-2.jpg" alt="img").lazyload
 
 
 
@@ -117,8 +117,11 @@ block content
         .section-connect__image-wrapper
           .section-connect__image
             picture
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="./img/connect-2.png" alt="img" width="574" height="380").lazyload
+              source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="./img/connect-2.webp" type="image/webp")
+              img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="./img/connect-2.png" alt="img").lazyload
+
 
         .section-connect__text-wrapper.txt-start.justify-start
           .section-connect__title.mb-middle.section-title.section-title--secondary CASE STUDY HEADING
