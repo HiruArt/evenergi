@@ -67,6 +67,9 @@
 			padding-left: 25px;
 			padding-right: 25px;
 		}
+		@include for-992{
+			padding-top: 20px;
+		}
 		&:hover{
 			.section-slider__item-logo img{
 				filter: grayscale(0);
@@ -117,6 +120,7 @@
 
 		@include for-1024{
 			margin-bottom: 20px;
+			font-size: 14px;
 		}
 	}
 
@@ -160,6 +164,9 @@
 		transition: .3s;
 		@include for-1600 {
 			padding: 0 30px;
+		}
+		@include for-992{
+			min-height: 45px;
 		}
 
 		span {

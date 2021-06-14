@@ -1,0 +1,103 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Information page";
+  - var pageClass = "information-page";
+  - var pageActive = "information-page";
+
+block content
+  div.main-wrap
+    .section-top.webp-img(
+      data-img="./img/info-page-bg.png"
+      data-webp="./img/info-page-bg.webp")
+      .section-top__inner.site-container
+        h1.section-top__title Information Page
+        .section-top__desk Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.v
+
+
+    .section-heading
+      .section-heading__inner.site-container
+        .section-heading__left
+          .section-heading__title heading
+          .section-heading__text
+            p.section-heading__text-row Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            p.section-heading__text-row Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.
+        .section-heading__right
+          .site-container-half.site-container-half--right
+            .section-heading__right-image-wrapper
+              if(pageActive === 'study-page')
+                .section-heading__right-image
+                  picture
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+              if(pageActive === 'information-page')
+                .section-heading__right-image
+                  picture
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+
+                  //.section-heading__right-image-img
+
+
+    .section-circle
+      .section-circle__inner.site-container
+        .section-circle__title.section-title Heading
+        .section-circle__title-info-wrapper
+          p.section-circle__title-info Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.
+        .section-circle__row
+          .section-circle__item
+            .section-circle__item-img-wrapper
+              picture
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+            .section-circle__item-title Point 01
+            .section-circle__item-descr Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+            .section-circle__item-bnt
+              a(href='#').section-circle__item-link READ MORE
+
+          .section-circle__item
+            .section-circle__item-img-wrapper
+              picture
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+            .section-circle__item-title Point 02
+            .section-circle__item-descr Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+            .section-circle__item-bnt
+              a(href='#').section-circle__item-link READ MORE
+
+          .section-circle__item
+            .section-circle__item-img-wrapper
+              picture
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+            .section-circle__item-title Point 03
+            .section-circle__item-descr Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+            .section-circle__item-bnt
+              a(href='#').section-circle__item-link READ MORE
+
+
+    .section-connect.bg-right
+      .section-connect__inner.site-container
+        .section-connect__image-wrapper
+          .section-connect__image
+            picture
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="./img/connect-2.png" alt="img" width="574" height="380").lazyload
+
+        .section-connect__text-wrapper.txt-start.justify-start
+          .section-connect__title.mb-middle.section-title.section-title--secondary CASE STUDY HEADING
+          .section-connect__subtitle.mb-middle Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow View case study
+
+
+    .section-connect
+      .section-connect__inner.site-container
+        .section-connect__text-wrapper
+          .section-connect__title.section-title.section-title--secondary WORK WITH US
+          .section-connect__subtitle Get in touch to find out more about how we can help.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
+
+
+
