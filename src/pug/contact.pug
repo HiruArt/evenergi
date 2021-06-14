@@ -17,33 +17,34 @@ block content
     .section-request
       .section-request__inner.site-container
         .section-request__title.section-title PURPOSE OF THE REQUEST:
-        .section-request__form.site-form
-          form(action="#")
-            .section-request__form-title NEW PROJECT REQUEST
+        .section-request__content
+          .section-request__form.site-form
+            form(action="#" id="contact-form")
+              .section-request__form-title NEW PROJECT REQUEST
               .site-form__row
                 label
-                  input(type="text" placeholder="WHAT’S YOUR FULL NAME?")
+                  input(type="text" name="fullName" placeholder="WHAT’S YOUR FULL NAME?" required)
               .site-form__row
                 label
-                  input(type="text" placeholder="WHAT ORGANISATION ARE YOU WITH?")
+                  input(type="text" name="organisation" placeholder="WHAT ORGANISATION ARE YOU WITH?" required)
               .site-form__row
                 label
-                  input(type="email" placeholder="WHAT’S YOUR EMAIL?")
+                  input(type="email" name="email" placeholder="WHAT’S YOUR EMAIL?" required)
               .site-form__row
                 label
-                  input(type="tel" placeholder="WHAT’S YOUR BEST CONTACT NUMBER?")
+                  input(type="text" name="phoneNumber" placeholder="WHAT’S YOUR BEST CONTACT NUMBER?" required)
               .site-form__row
                 label
-                  input(type="text" placeholder="WHAT’S YOUR ENQUIRY?")
+                  input(type="text" name="" placeholder="WHAT’S YOUR ENQUIRY?")
 
-              .site-form__btn-submit
+              .site-form__btn-submit.section-request__form-btn
                 button(type="submit" value="submit" style="display: none;")
-                a(href="javascript:void(0);").site-form__submit.site-btn.site-btn--yellow SUBMIT
-        .section-request__media
-          .section-request__media-title MEDIA <br>
-            | SOMETHING ELSE?
-          .section-request__text TO VIEW OR ENQUIRE ABOUT AVAILABLE POSITIONS.
-            a(href="#") EXPLORE CAREERS
+                a(href="javascript:void(0);").site-form__btn-submit-i.site-btn.site-btn--yellow.js_submit-form-btn SUBMIT
+          .section-request__media
+            .section-request__media-title MEDIA <br>
+              | SOMETHING ELSE?
+            p.section-request__text TO VIEW OR ENQUIRE ABOUT AVAILABLE POSITIONS.
+              a(href="#")  EXPLORE CAREERS
 
 
     .section-connect

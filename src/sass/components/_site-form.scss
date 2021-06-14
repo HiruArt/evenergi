@@ -1,0 +1,100 @@
+@import "../modules/_help";
+
+.site-form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  from{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @include for-1600{
+      margin-bottom: 25px;
+    }
+
+    @include for-1024{
+      margin-bottom: 15px;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+      border: 0;
+      border-bottom: 1px solid #1A1A1A;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      width: 100%;
+      font-size: 28px;
+      line-height: 33px;
+      font-weight: 500;
+      background: transparent;
+
+      @include for-1600{
+        font-size: 22px;
+        line-height: normal;
+      }
+
+      @include for-1400{
+        font-size: 18px;
+      }
+
+      @include for-1024{
+        font-size: 16px;
+      }
+
+      &::placeholder{
+        color: #4D4D4D;
+        font-style: italic;
+        font-weight: 500;
+
+        @include for-680{
+          font-size: 12px;
+        }
+      }
+
+      &.error{
+        border-color: red;
+      }
+    }
+
+    label{
+      width: 100%;
+      position: relative;
+    }
+
+    span.error{
+      position: absolute;
+      top: calc(100% + 4px);
+      right: 0;
+      color: red;
+      font-size: 14px;
+
+      @include for-1024{
+        font-size: 10px;
+      }
+    }
+
+  }
+
+  &__btn-submit{
+
+    &--i{
+      padding: 14px 30px 15px;
+      min-width: 280px;
+    }
+  }
+  &__btn-submit-i{
+      padding: 14px 30px 15px;
+      min-width: 280px;
+  }
+
+}

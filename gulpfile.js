@@ -85,6 +85,7 @@ gulp.task('js-libs', () => {
       'node_modules/swiper/swiper-bundle.js',
       'node_modules/lazysizes/lazysizes.js',
       'node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.js',
+      'node_modules/jquery-validation/dist/jquery.validate.js',
       // 'node_modules/@popperjs/core/dist/umd/popper.js',
       // 'node_modules/tippy.js/dist/tippy-bundle.umd.js',
 

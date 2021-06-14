@@ -3,22 +3,76 @@
 .section-request{
 
   &__inner{
+    padding-top: 55px;
+    padding-bottom: 50px;
 
     &.site-container {
-      max-width: 1080px;
+      max-width: 1124px;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+
+    @include from-1024{
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 
   &__title{
+    margin-bottom: 60px;
+
+    @include for-1600{
+      margin-bottom: 40px;
+    }
+
+    @include for-1024{
+      margin-bottom: 20px;
+    }
 
   }
 
   &__form{
+    margin-bottom: 60px;
 
+    @include for-1600{
+      margin-bottom: 30px;
+    }
   }
 
   &__form-title{
+    font-size: 60px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 60px;
 
+    @include for-1600{
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    @include for-1400{
+      font-size: 24px;
+    }
+
+    @include for-1024{
+      font-size: 18px;
+    }
+  }
+
+  &__form-btn{
+    display: flex;
+    justify-content: flex-end;
+
+    @include for-1600{
+      margin-top: 40px;
+    }
+
+    @include for-680{
+      justify-content: center;
+    }
   }
 
   &__media{
@@ -26,11 +80,46 @@
   }
 
   &__media-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    line-height: 70px;
 
+    @include for-1600{
+      font-size: 36px;
+      margin-bottom: 35px;
+      line-height: 65px;
+    }
+
+    @include for-1400{
+      font-size: 28px;
+      line-height: normal;
+    }
+
+    @include for-1024{
+      font-size: 24px;
+    }
   }
 
   &__text{
+    color: #004B70;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 600;
 
+    @include for-1600{
+      font-size: 18px
+    }
+
+    @include for-1400{
+      font-size: 14px
+    }
+
+    a{
+      color: #FF8D00;
+      font-weight: 600;
+    }
   }
 
 }
