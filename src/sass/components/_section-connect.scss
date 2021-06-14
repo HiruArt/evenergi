@@ -118,4 +118,8 @@
 		display: flex;
 		justify-content: center;
 	}
+
+	.bg-right &__btn{
+		justify-content: flex-start;
+	}
 }

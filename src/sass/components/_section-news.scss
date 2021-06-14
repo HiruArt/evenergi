@@ -1,0 +1,54 @@
+@import "../modules/_help";
+
+.section-news{
+
+  &__inner{
+
+  }
+
+  &__list{
+
+  }
+
+  &__item{
+    float: left;
+    height: 235px;
+    width: 25%;
+
+    &--horizontal{
+      float: left;
+      width: 50%;
+    }
+
+    &--big{
+      float: right;
+      width: 50%;
+      height: 590px;
+    }
+  }
+
+  &__item-img{
+
+  }
+
+  &__item-content{
+
+  }
+
+  &__item-title{
+
+  }
+
+  &__item-row{
+
+  }
+
+  &__item-date{
+
+  }
+
+  &__item-read{
+
+  }
+
+}

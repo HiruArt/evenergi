@@ -1,0 +1,85 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Blog page";
+  - var pageClass = "blog-page";
+  - var pageActive = "blog-page";
+
+block content
+  div.main-wrap
+    .section-top.webp-img(
+      data-img="./img/blog-top-img.png"
+      data-webp="./img/blog-top-img.webp")
+      .section-top__inner.site-container
+        h1.section-top__title BLOG
+        .section-top__desk Stay up-to-date with the latest news and articles.
+
+    .section-news
+      .section-news__inner.site-container
+        .section-news__list
+          .section-news__item.section-news__item--big
+            .section-news__item-img
+              picture
+                source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="./img/blog01.webp" type="image/webp")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/blog01.png" alt="img" width="574" height="380").lazyload
+            .section-news__item-content
+              .section-news__item-title LOREM IPSUM DOLOR SIT AMET, CONSECT ETUER ADIPISCING ELIT
+              .section-news__item-row
+                .section-news__item-date DATE 2021
+                a(href="#").section-news__item-read READ MORE
+
+
+          .section-news__item.section-news__item--horizontal
+            .section-news__item-img
+              picture
+                source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="./img/blog01.webp" type="image/webp")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/blog01.png" alt="img" width="574" height="380").lazyload
+            .section-news__item-content
+              .section-news__item-title LOREM IPSUM DOLOR SIT AMET, CONSECT ETUER ADIPISCING ELIT
+              .section-news__item-row
+                .section-news__item-date DATE 2021
+                a(href="#").section-news__item-read READ MORE
+
+          .section-news__item.section-news__item
+            .section-news__item-img
+              picture
+                source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="./img/blog01.webp" type="image/webp")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/blog01.png" alt="img" width="574" height="380").lazyload
+            .section-news__item-content
+              .section-news__item-title LOREM IPSUM DOLOR SIT AMET, CONSECT ETUER ADIPISCING ELIT
+              .section-news__item-row
+                .section-news__item-date DATE 2021
+                a(href="#").section-news__item-read READ MORE
+
+
+
+    .section-connect.bg-right
+      .section-connect__inner.site-container
+        .section-connect__image-wrapper
+          .section-connect__image
+            picture
+              source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="./img/hero-home.webp" type="image/webp")
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="./img/connect-2.png" alt="img" width="574" height="380").lazyload
+
+        .section-connect__text-wrapper.txt-start.justify-start
+          .section-connect__title.mb-middle.section-title.section-title--secondary CASE STUDY HEADING
+          .section-connect__subtitle.mb-middle Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow View case study
+
+
+    .section-connect
+      .section-connect__inner.site-container
+        .section-connect__text-wrapper
+          .section-connect__title.section-title.section-title--secondary WORK WITH US
+          .section-connect__subtitle Get in touch to find out more about how we can help.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
