@@ -30,6 +30,13 @@
   @media (min-width: 680px) { @content; }
 }
 
+@mixin for-768 {
+  @media (max-width: 768px) { @content; }
+}
+@mixin from-768 {
+  @media (min-width: 769px) { @content; }
+}
+
 @mixin for-800 {
   @media (max-width: 800px) { @content; }
 }
