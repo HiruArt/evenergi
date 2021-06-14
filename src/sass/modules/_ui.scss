@@ -416,3 +416,51 @@ div[data-tab-content]{
 .justify-start{
 	justify-content: flex-start !important;
 }
+
+.site-search{
+
+	form{
+		display: flex;
+		width: 100%;
+		position: relative;
+	}
+
+	input[type="text"],
+	input[type="search"]{
+		background: transparent;
+		padding: 10px 55px 10px 25px;
+		width: 100%;
+		border-radius: 50px;
+		border: 2px solid #1A1A1A;
+		font-weight: 600;
+		font-size: 14px;
+		min-height: 42px;
+
+		&::placeholder{
+			font-weight: 600;
+			color: #1A1A1A;
+			font-variant: small-caps;
+		}
+	}
+
+	button{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 60px;
+		height: 100%;
+		background-color: transparent;
+		background-position: center;
+		background-size: 26px;
+		background-repeat: no-repeat;
+		border: 0;
+		border-radius: 50px;
+		cursor: pointer;
+		transition: .3s all ease-in;
+
+		&:hover{
+			filter: invert(1);
+			background-color: white;
+		}
+	}
+}

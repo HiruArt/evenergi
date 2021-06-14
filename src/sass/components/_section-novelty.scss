@@ -1,0 +1,152 @@
+@import "../modules/_help";
+
+.section-novelty{
+
+  &__inner{
+
+  }
+
+  &__head{
+
+  }
+
+  &__head-inner{
+
+  }
+
+  &__head-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include from-1400{
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+  }
+
+  &__head-title{
+    color: #1A1A1A;
+    font-size: 36px;
+  }
+
+  &__head-search{
+    max-width: 335px;
+    width: 100%;
+    display: flex;
+  }
+
+  &__head-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #004B70;
+    border-bottom: 2px solid #004B70;
+
+    @include from-1400{
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+  }
+
+  &__head-item{
+
+  }
+
+  &__head-link{
+    color: #004B70;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s all ease-in;
+    display: flex;
+
+    &:hover {
+      color: #FF8D00;
+      transform: translateY(-1px);
+    }
+  }
+
+  &__body{
+    @include from-1400{
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+  }
+
+  &__body-inner{
+
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  &__item{
+    margin-bottom: 100px;
+  }
+
+  &__item-content{
+    display: flex;
+  }
+
+  &__item-img{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    
+    picture{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__item-info{
+    padding-left: 60px;
+    width: 100%;
+  }
+
+  &__item-date{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+
+  &__item-title{
+    font-size: 28px;
+    font-weight: 800;
+    color: #004B70;
+    transition: .3s all ease-in;
+    margin-bottom: 30px;
+
+    &:hover{
+      color: #FF8D00;
+    }
+  }
+
+  &__item-desk{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+  }
+
+  &__item-read{
+    color: #19B3FF;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s all ease-in;
+
+    &:hover{
+      color: #FF8D00;
+    }
+  }
+
+}

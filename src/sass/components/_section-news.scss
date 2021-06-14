@@ -14,7 +14,10 @@
     }
 
     &.site-container {
-      max-width: 1300px;
+      @include from-1400{
+        padding-left: 170px;
+        padding-right: 170px;
+      }
     }
   }
 
