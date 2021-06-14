@@ -76,42 +76,68 @@ block content
 
 
     .section-novelty
-      .section-novelty__inner
-        .section-novelty__head.site-container
+      .section-novelty__inner.site-container
+        .section-novelty__head
           .section-novelty__head-inner
             .section-novelty__head-top
               .section-novelty__head-title MORE NEWS
-              .section-novelty__head-search
-                form
-                  input(type="search" placeholder="SEARCH OUR ARCHIVE").site-search
-                  button(type="submit")
+              .section-novelty__head-search.site-search
+                form(action="#")
+                  input(type="text" placeholder="SEARCH OUR ARCHIVE")
+                  button(type="submit" data-bg="./img/ico/search-ico.svg").lazyload
             .section-novelty__head-list
-              .section-novelty__head-list-item
-                a(href="#").section-novelty__head-list-link ALL
-              .section-novelty__head-list-item
-                a(href="#").section-novelty__head-list-link EVENERGI IN THE NEWS
-              .section-novelty__head-list-item
-                a(href="#").section-novelty__head-list-link FUTURE FLEET
-              .section-novelty__head-list-item
-                a(href="#").section-novelty__head-list-link ELECTRIC BUSES
-              .section-novelty__head-list-item
-                a(href="#").section-novelty__head-list-link FREIGHT AND LOGISTICS
+              .section-novelty__head-item
+                a(href="#").section-novelty__head-link ALL
+              .section-novelty__head-item
+                a(href="#").section-novelty__head-link EVENERGI IN THE NEWS
+              .section-novelty__head-item
+                a(href="#").section-novelty__head-link FUTURE FLEET
+              .section-novelty__head-item
+                a(href="#").section-novelty__head-link ELECTRIC BUSES
+              .section-novelty__head-item
+                a(href="#").section-novelty__head-link FREIGHT AND LOGISTICS
         .section-novelty__body
           .section-novelty__body-inner
             .section-novelty__list
               .section-novelty__item
                 .section-novelty__item-content
-                  .section-novelty__item-img
+                  a(href="#").section-novelty__item-img
                     picture
                       source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-srcset="./img/blog04.webp" type="image/webp")
+                        data-srcset="./img/blog01.webp" type="image/webp")
                       img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="./img/blog04.png" alt="img").lazyload
+                        data-src="./img/blog01.png" width="500" height="288" alt="img").lazyload
                   .section-novelty__item-info
-                    .section-novelty__item-date
-                    .section-novelty__item-title
-                    .section-novelty__item-desk
-                    .section-novelty__item-read
+                    .section-novelty__item-date DATE 2021
+                    a(href="#").section-novelty__item-title LOREM IPSUM DOLOR SIT AMET, CONSECT ETUE ADIPISCING ELIT
+                    .section-novelty__item-desk Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    a(href="#").section-novelty__item-read READ MORE
+              .section-novelty__item
+                .section-novelty__item-content
+                  a(href="#").section-novelty__item-img
+                    picture
+                      source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-srcset="./img/blog02.webp" type="image/webp")
+                      img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="./img/blog02.png" width="500" height="288" alt="img").lazyload
+                  .section-novelty__item-info
+                    .section-novelty__item-date DATE 2021
+                    a(href="#").section-novelty__item-title LOREM IPSUM DOLOR SIT AMET, CONSECT ETUE ADIPISCING ELIT
+                    .section-novelty__item-desk Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    a(href="#").section-novelty__item-read READ MORE
+              .section-novelty__item
+                .section-novelty__item-content
+                  a(href="#").section-novelty__item-img
+                    picture
+                      source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-srcset="./img/blog03.webp" type="image/webp")
+                      img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="./img/blog03.png" width="500" height="288" alt="img").lazyload
+                  .section-novelty__item-info
+                    .section-novelty__item-date DATE 2021
+                    a(href="#").section-novelty__item-title LOREM IPSUM DOLOR SIT AMET, CONSECT ETUE ADIPISCING ELIT
+                    .section-novelty__item-desk Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    a(href="#").section-novelty__item-read READ MORE
 
 
 

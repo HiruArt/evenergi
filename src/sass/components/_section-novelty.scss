@@ -1,0 +1,267 @@
+@import "../modules/_help";
+
+.section-novelty{
+
+  &__inner{
+
+  }
+
+  &__head{
+
+  }
+
+  &__head-inner{
+
+  }
+
+  &__head-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include from-1440{
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+
+    @include for-680{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__head-title{
+    color: #1A1A1A;
+    font-size: 36px;
+
+    @include for-1600{
+      font-size: 28px;
+    }
+
+    @include for-1024{
+      font-size: 20px;
+    }
+
+    @include for-680{
+      margin-bottom: 15px;
+    }
+  }
+
+  &__head-search{
+    max-width: 335px;
+    width: 100%;
+    display: flex;
+
+    @include for-680{
+      max-width: 100%;
+    }
+  }
+
+  &__head-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid #004B70;
+    border-bottom: 2px solid #004B70;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: auto;
+
+    @include from-1440{
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+  }
+
+  &__head-item{
+    padding: 0 15px;
+    display: flex;
+  }
+
+  &__head-link{
+    color: #004B70;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s all ease-in;
+    display: flex;
+    white-space: nowrap;
+
+    @include for-1024{
+      padding: 8px 12px;
+      color: white;
+      background: #004B70;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      @include from-1024 {
+        color: #FF8D00;
+        transform: translateY(-1px);
+      }
+    }
+
+    @include for-1600{
+      font-size: 18px;
+    }
+
+    @include for-1400{
+      font-size: 16px;
+    }
+
+    @include for-1024{
+      font-size: 14px;
+    }
+  }
+
+  &__body{
+    @include from-1440{
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+  }
+
+  &__body-inner{
+
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    @include from-1600{
+      margin-top: 70px;
+    }
+
+    @include for-1400{
+      margin-top: 30px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 100px;
+
+    @include for-1600{
+      margin-bottom: 70px;
+    }
+
+    @include for-1400{
+      margin-bottom: 35px;
+    }
+  }
+
+  &__item-content{
+    display: flex;
+
+    @include for-680{
+      flex-direction: column;
+    }
+  }
+
+  &__item-img{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: flex-start;
+
+    @include for-1600{
+      max-width: 420px;
+    }
+
+    @include for-992{
+      max-width: 40%;
+    }
+
+    @include for-680{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    picture{
+      display: flex;
+      width: 100%;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-info{
+    padding-left: 60px;
+    width: 100%;
+
+    @include for-1400{
+      padding-left: 30px;
+    }
+
+    @include for-680{
+      padding-left: 0;
+    }
+  }
+
+  &__item-date{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 30px;
+
+    @include for-1400{
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item-title{
+    font-size: 28px;
+    font-weight: 800;
+    color: #004B70;
+    transition: .3s all ease-in;
+    margin-bottom: 30px;
+    display: flex;
+
+    @include for-1400{
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    &:hover{
+      color: #FF8D00;
+    }
+  }
+
+  &__item-desk{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+
+    @include for-1400{
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item-read{
+    color: #19B3FF;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s all ease-in;
+
+    @include from-1400{
+      font-size: 16px;
+    }
+
+    &:hover{
+      color: #FF8D00;
+    }
+  }
+
+}
