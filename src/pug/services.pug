@@ -1,0 +1,432 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Service page";
+  - var pageClass = "service-page";
+  - var pageActive = "service-page";
+
+block content
+  div.main-wrap
+    .hero
+      .hero__inner
+        .hero__bg
+          picture
+            source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/service-1.webp" type="image/webp")
+            img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="./img/service-1.png" alt="img").lazyload
+        .hero__content.site-container
+          .hero__geom-wrap
+            .hero__geom
+              picture
+                img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/hero-geom.svg" alt="img" width="1100" height="1100").lazyload
+            h1.hero__title Future Energy, eMobility and <br>Electric Vehicle Fleet Advisory
+          .hero__text Supporting fleets, the public sector and energy distributors to accelerate the transition to zero emissions transport with our industry leading software and advisory services.
+          .hero__btn
+            a(href="#").hero__btn-i.site-btn.site-btn--violet
+              span REQUEST A DEMO
+
+
+
+    .section__logo-row.site-container
+      .section__logo-title AS SEEN IN
+      .section__logo-items
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+
+
+    .section-heading
+      .section-heading__inner.site-container
+        .section-heading__left
+          .section-heading__text.position-center
+            p.section-heading__text-row The Evenergi advisory team has extensive experience across electric mobility, energy infrastructure, behavioural psychology, machine learning and software development, gained from working with major government and corporate customers inAustralia, United Kingdom, and France.
+        .section-heading__right
+          .site-container-half.site-container-half--right
+            .section-heading__right-image-wrapper
+              if(pageActive === 'service-page')
+                .section-heading__right-image.height-800
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/service-2.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/service-2.jpg" alt="img").lazyload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-problems
+      .section-problems__inner.site-container
+        .section-problems__title.section-title.center PROBLEMS WE SOLVE
+        .section-problems__list.custom-row
+          .section-problems__item.custom-col
+            .section-problems__case.color-case.orange
+              .section-problems__case-ico
+                picture
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/problems01-ico.svg" alt="img" width="220" height="220").lazyload
+              .section-problems__case-text How can I transition my ﬂeet <br>to zero emissions in the most <br>operationally, economic <br>and environmentally <br>sustainable way?
+          .section-problems__item.custom-col
+            .section-problems__case.color-case.violet
+              .section-problems__case-ico
+                picture
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/problems02-ico.svg" alt="img" width="220" height="220").lazyload
+              .section-problems__case-text What are the best policy <br>decisions for my organisation <br>or my community?
+          .section-problems__item.custom-col
+            .section-problems__case.color-case.blue
+              .section-problems__case-ico
+                 picture
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/problems03-ico.svg" alt="img" width="220" height="220").lazyload
+              .section-problems__case-text How do I manage the impact <br>of electric vehicles on my <br>energy distribution network?
+
+    .section-solution
+      .section-solution__inner.site-container
+        .section-solution__title.section-title SERVICES & SOLUTIONS
+        .section-solution__head
+          .site-tab__wrapper
+            .section-solution__tab.site-tab
+              .section-solution__tab-item.site-tab__item.active(data-tab-name="solution01")
+                span BetterFleet
+              .section-solution__tab-item.site-tab__item(data-tab-name="solution02")
+                span GridFleet
+              .section-solution__tab-item.site-tab__item(data-tab-name="solution03")
+                span Zero Emissions Transport Advisory
+
+        .section-solution__body
+          .section-solution__content.active(data-tab-content="solution01")
+            .section-solution__content__inner
+              .section-solution__text The platform to help you understand the future scenarios for your ﬂeet, make holistic strategic decisions in the new world of zero emissions technologies and manage your new assets at a fraction of the cost.
+              .section-solution__list.custom-row
+                .section-solution__item.custom-col
+                  .section-solution__item-body
+                    .section-solution__item-ico
+                      picture
+                        img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/solution01-ico.svg" alt="img" width="110").lazyload
+                    .section-solution__item-info
+                      .section-solution__item-title BETTERFLEET PLAN:
+                      .section-solution__item-desk Our analytics based software allows you to input your current ﬂeet statistics to set tailored asset replacement and infrastructure planning for a seamless zero emissions transition.
+                .section-solution__item.custom-col
+                  .section-solution__item-body
+                    .section-solution__item-ico
+                      picture
+                        img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/solution02-ico.svg" alt="img" width="110").lazyload
+                    .section-solution__item-info
+                      .section-solution__item-title BETTERFLEET MANAGE:
+                      .section-solution__item-desk From energy and battery management to reporting and budgeting, it’s simpler to take control of your transition with our management platform.
+
+
+          .section-solution__content(data-tab-content="solution02")
+            .section-solution__content__inner
+              .section-solution__text GridFleet
+              .section-solution__list.custom-row
+                .section-solution__item.custom-col
+                  .section-solution__item-body
+                    .section-solution__item-ico
+                      picture
+                        img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/solution02-ico.svg" alt="img" width="110").lazyload
+                    .section-solution__item-info
+                      .section-solution__item-title BETTERFLEET MANAGE:
+                      .section-solution__item-desk From energy and battery management to reporting and budgeting, it’s simpler to take control of your transition with our management platform.
+
+                .section-solution__item.custom-col
+                  .section-solution__item-body
+                    .section-solution__item-ico
+                      picture
+                        img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/solution02-ico.svg" alt="img" width="110").lazyload
+                    .section-solution__item-info
+                      .section-solution__item-title BETTERFLEET MANAGE:
+                      .section-solution__item-desk From energy and battery management to reporting and budgeting, it’s simpler to take control of your transition with our management platform.
+
+                .section-solution__item.custom-col
+                  .section-solution__item-body
+                    .section-solution__item-ico
+                      picture
+                        img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/solution02-ico.svg" alt="img" width="110").lazyload
+                    .section-solution__item-info
+                      .section-solution__item-title BETTERFLEET MANAGE:
+                      .section-solution__item-desk From energy and battery management to reporting and budgeting, it’s simpler to take control of your transition with our management platform.
+
+
+          .section-solution__content(data-tab-content="solution03")
+            .section-solution__content__inner
+              .section-solution__text Zero Emissions Transport Advisory
+              .section-solution__list.custom-row
+                .section-solution__item.custom-col
+                  .section-solution__item-body
+                    .section-solution__item-ico
+                      picture
+                        img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/solution01-ico.svg" alt="img" width="110").lazyload
+                    .section-solution__item-info
+                      .section-solution__item-title BETTERFLEET PLAN:
+                      .section-solution__item-desk Our analytics based software allows you to input your current ﬂeet statistics to set tailored asset replacement and infrastructure planning for a seamless zero emissions transition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-slider
+      .section-slider__inner.site-container
+        .section-slider__title.section-title.center SUCCESS STORIES
+        .section-slider__wrap
+          .section-slider__container.js_swiper_one
+            .section-slider__wrapper.swiper-wrapper
+              .section-slider__item.swiper-slide
+                .section-slider__item-content
+                  .section-slider__item-logo
+                    picture
+                      img.lazyload(src="img/Ausgrid.png" alt="img")
+                  .section-slider__item-title AUSGRID
+                  .section-slider__item-subtitle Review of Connections process
+                  .section-slider__item-text “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut ”
+                  .section-slider__item-author Name, Job title
+                  .section-slider__item-btn
+                    a(href="").section-slider__item-link
+                      span.section-slider__item-link-text Read the Case Study
+                      span.section-slider__item-link-ico
+                        picture
+                          img.lazyload(src="img/arrow-right.svg" alt="img")
+
+
+              .section-slider__item.swiper-slide
+                .section-slider__item-content
+                  .section-slider__item-logo
+                    picture
+                      img.lazyload(src="img/Ausgrid.png" alt="img")
+                  .section-slider__item-title AUSGRID
+                  .section-slider__item-subtitle Review of Connections process
+                  .section-slider__item-text “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut ”
+                  .section-slider__item-author Name, Job title
+                  .section-slider__item-btn
+                    a(href="").section-slider__item-link
+                      span.section-slider__item-link-text Read the Case Study
+                      span.section-slider__item-link-ico
+                        picture
+                          img.lazyload(src="img/arrow-right.svg" alt="img")
+
+
+              .section-slider__item.swiper-slide
+                .section-slider__item-content
+                  .section-slider__item-logo
+                    picture
+                      img.lazyload(src="img/Ausgrid.png" alt="img")
+                  .section-slider__item-title AUSGRID
+                  .section-slider__item-subtitle Review of Connections process
+                  .section-slider__item-text “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut ”
+                  .section-slider__item-author Name, Job title
+                  .section-slider__item-btn
+                    a(href="").section-slider__item-link
+                      span.section-slider__item-link-text Read the Case Study
+                      span.section-slider__item-link-ico
+                        picture
+                          img.lazyload(src="img/arrow-right.svg" alt="img")
+
+
+              .section-slider__item.swiper-slide
+                .section-slider__item-content
+                  .section-slider__item-logo
+                    picture
+                      img.lazyload(src="img/Ausgrid.png" alt="img")
+                  .section-slider__item-title AUSGRID
+                  .section-slider__item-subtitle Review of Connections process
+                  .section-slider__item-text “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut ”
+                  .section-slider__item-author Name, Job title
+                  .section-slider__item-btn
+                    a(href="").section-slider__item-link
+                      span.section-slider__item-link-text Read the Case Study
+                      span.section-slider__item-link-ico
+                        picture
+                          img.lazyload(src="img/arrow-right.svg" alt="img")
+
+
+
+        .section-slider__info We work with fleets, the public sector and energy distributors across the globe to accelerate <br>their transition to zero emissions transport.
+
+        .section-slider__btn
+          a(href='#').site-btn.site-btn--violet SEE MORE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section__logo-row.site-container
+      .section__logo-title CLIENTS
+      .section__logo-items
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+
+    .section-clients__testimonials
+      .section-clients__testimonials-inner
+        .section-clients__testimonials-left
+          .site-container-half.site-container-half--left
+            .section-clients__testimonials-content
+              .section-clients__testimonials-title.section-title.section-title--secondary WORK WITH US
+              .section-clients__testimonials-rating
+                .section-clients__testimonials-item
+                  .section-clients__testimonials-number
+                    span#counter01(data-max-count="450") 450
+                  .section-clients__testimonials-rate
+                    .section-clients__testimonials-rating-inner.w-50
+                  .section-clients__testimonials-text fleets using our platforms
+
+                .section-clients__testimonials-item
+                  .section-clients__testimonials-number
+                    span#counter02(data-max-count="1000") 1000
+                    | +
+                  .section-clients__testimonials-rate
+                    .section-clients__testimonials-rating-inner.w-80
+                  .section-clients__testimonials-text vehicles analysed
+
+                .section-clients__testimonials-item
+                  .section-clients__testimonials-number
+                    span#counter03(data-max-count="1200") 1200
+                  .section-clients__testimonials-rate
+                    .section-clients__testimonials-rating-inner.w-80
+                  .section-clients__testimonials-text postcodes mapped for future charging demand
+
+                .section-clients__testimonials-item
+                  .section-clients__testimonials-number
+                    span#counter04(data-max-count="150") 150
+                  .section-clients__testimonials-rate
+                    .section-clients__testimonials-rating-inner.w-50
+                  .section-clients__testimonials-text public sector agencies using our platforms
+
+
+        .section-clients__testimonials-right
+          .site-container-half.site-container-half--right
+            .section-clients__testimonials-content
+              .section-clients__testimonials-title.section-title.section-title--secondary Testimonials
+              .section-clients__testimonials-comment
+                .section-clients__testimonials-text-wrapper
+                  .section-clients__testimonials-quotes
+                    picture
+                      img.lazyload(src="img/quotes.svg" alt="img")
+                  .section-clients__testimonials-text.section-clients__testimonials-text--bold Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+
+                    .section-clients__testimonials-author Name Surname, Job Title, <br>Company Name
+
+    .section__logo-row.site-container
+      .section__logo-title AS SEEN IN
+      .section__logo-items
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+        .section__logo-item
+          picture
+            img.lazyload(src="img/Ausgrid.png" alt="img")
+
+
+    .section-connect
+      .section-connect__inner.site-container
+        .section-connect__text-wrapper
+          .section-connect__title.section-title.section-title--secondary WORK WITH US
+          .section-connect__subtitle Get in touch to find out more about how we can help.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
+
+
+
+

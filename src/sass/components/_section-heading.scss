@@ -1,14 +1,14 @@
 .section-heading {
-	padding-bottom: 70px;
+	padding-bottom: 80px;
 	padding-top: 70px;
-	@include for-680{
-		padding-top: 50px;
-		padding-bottom: 50px;
+	@include for-680 {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	&__inner {
 		display: flex;
-		@include for-680{
+		@include for-680 {
 			flex-wrap: wrap;
 		}
 	}
@@ -19,8 +19,9 @@
 	&__right {
 		display: flex;
 		justify-content: space-between;
-		.site-container-half{
-			@include for-680{
+
+		.site-container-half {
+			@include for-680 {
 				margin: 0;
 				padding: 0;
 				max-width: 100%;
@@ -34,7 +35,7 @@
 		font-size: 42px;
 		padding-top: 44px;
 		margin-bottom: 0;
-		@include for-680{
+		@include for-680 {
 			padding-top: 0;
 			font-size: 20px;
 		}
@@ -50,25 +51,34 @@
 		padding: 64px 0;
 		padding-right: 75px;
 		margin-bottom: 70px;
-		@include for-1600{
+
+		&.position-center {
+			top: 350px;
+		}
+
+		@include for-1600 {
 			font-size: 20px;
 		}
-		@include for-992{
+		@include for-1100 {
+			font-size: 14px;
+		}
+		@include for-992 {
 			padding: 32px 0;
 			padding-right: 25px;
 		}
-		@include for-680{
+		@include for-680 {
 			left: 0;
 			margin: 0;
-			font-size: 16px;
+			font-size: 14px;
 			padding: 16px 0;
 			padding-right: 0;
 		}
 	}
 
+
 	&__text-row {
 		margin-bottom: 30px;
-		@include for-992{
+		@include for-992 {
 			margin-bottom: 15px;
 		}
 	}
@@ -84,15 +94,20 @@
 		width: 100%;
 		height: 100%;
 
+		&.height-800 {
+			max-height: 800px;
+		}
+
 		img {
 			height: 100%;
 			object-fit: cover;
-			@include for-680{
+			@include for-680 {
 				width: 100%;
 			}
 		}
 	}
-	&__right-image-img{
+
+	&__right-image-img {
 		width: 1100px;
 		height: 1100px;
 		background-color: #870058;

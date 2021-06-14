@@ -28,19 +28,24 @@ block content
               if(pageActive === 'study-page')
                 .section-heading__right-image
                   picture
-                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/study-2.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/study-2.jpg" alt="img").lazyload
+
               if(pageActive === 'information-page')
                 .section-heading__right-image
                   picture
-                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                      data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/img-template-big.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/img-template-big.jpg" alt="img").lazyload
 
-                  //.section-heading__right-image-img
+
 
 
     .section-circle
-      .section-circle__inner.site-container
+      .section-circle__inner.site-container.border-top
         .section-circle__title.section-title Heading
         .section-circle__title-info-wrapper
           p.section-circle__title-info Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.
@@ -48,8 +53,11 @@ block content
           .section-circle__item
             .section-circle__item-img-wrapper
               picture
-                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+                source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="./img/template-small.webp" type="image/webp")
+                img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/template-small.jpg" alt="img").lazyload
+
             .section-circle__item-title Point 01
             .section-circle__item-descr Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
             .section-circle__item-bnt
@@ -58,8 +66,11 @@ block content
           .section-circle__item
             .section-circle__item-img-wrapper
               picture
-                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+                source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="./img/template-small.webp" type="image/webp")
+                img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/template-small.jpg" alt="img").lazyload
+
             .section-circle__item-title Point 02
             .section-circle__item-descr Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
             .section-circle__item-bnt
@@ -68,36 +79,200 @@ block content
           .section-circle__item
             .section-circle__item-img-wrapper
               picture
-                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  data-src="./img/study-2.jpg" alt="img" width="1100" height="1100").lazyload
+                source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-srcset="./img/template-small.webp" type="image/webp")
+                img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/template-small.jpg" alt="img").lazyload
+
             .section-circle__item-title Point 03
             .section-circle__item-descr Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
             .section-circle__item-bnt
               a(href='#').section-circle__item-link READ MORE
 
 
-    .section-connect.bg-right
-      .section-connect__inner.site-container
-        .section-connect__image-wrapper
-          .section-connect__image
-            picture
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-src="./img/connect-2.png" alt="img" width="574" height="380").lazyload
 
-        .section-connect__text-wrapper.txt-start.justify-start
-          .section-connect__title.mb-middle.section-title.section-title--secondary CASE STUDY HEADING
-          .section-connect__subtitle.mb-middle Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-          .section-connect__btn
-            a(href='#').site-btn.site-btn--yellow View case study
+    .section-article
+      .section-article__inner.site-container.border-top
+        .section-article__title.section-title Heading
+        .section-article__content
+
+          .section-article__content-item
+            .section-article__content-item-text.text-content
+              .section-article__content-item-text-inner.pt-0
+                p.section-article__content-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                p.section-article__content-text Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            .section-article__content-item-img-wrapper.image-content
+              .section-article__content-item-img
+                picture
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/templ-orange.webp" type="image/webp")
+                  img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/templ-orange.jpg" alt="img").lazyload
 
 
-    .section-connect
-      .section-connect__inner.site-container
-        .section-connect__text-wrapper
-          .section-connect__title.section-title.section-title--secondary WORK WITH US
-          .section-connect__subtitle Get in touch to find out more about how we can help.
-          .section-connect__btn
-            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
+          .section-article__content-item.dir-col-rev
+            .section-article__content-item-img-wrapper.image-content
+              .section-article__content-item-img
+                picture
+                  source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-srcset="./img/templ-orange.webp" type="image/webp")
+                  img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="./img/templ-orange.jpg" alt="img").lazyload
+            .section-article__content-item-text.text-content.pd-left
+              .section-article__content-item-text-inner
+                p.section-article__content-text Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.
+                p.section-article__content-text Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.
+
+        .section-article__content-item
+
+          .section-article__content-item-text.text-content
+            .section-article__content-item-text-inner
+              p.section-article__content-text Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              p.section-article__content-text Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+
+        .section-article__btn
+          a(href='#').section-article__btn.site-btn.site-btn--violet Button
+
+
+
+
+
+
+
+
+    .section-columns-icons
+      .section-columns-icons__inner.site-container.border-top
+        .section-columns-icons__title.section-title Heading
+        .section-columns-icons__info
+          p.section-columns-icons__info-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in.
+        .section-columns-icons__content
+          .section-columns-icons__content-inner
+
+            .section-columns-icons__content-item
+              .section-columns-icons__content-item-ico-wrapper
+                .section-columns-icons__content-item-ico
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/templ-ico.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/templ-ico.jpg" alt="img").lazyload
+              .section-columns-icons__content-item-desc
+                .section-columns-icons__content-item-title Subheading
+                .section-columns-icons__content-item-info
+                  p.section-columns-icons__content-item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+            .section-columns-icons__content-item
+              .section-columns-icons__content-item-ico-wrapper
+                .section-columns-icons__content-item-ico
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/templ-ico.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/templ-ico.jpg" alt="img").lazyload
+              .section-columns-icons__content-item-desc
+                .section-columns-icons__content-item-title Subheading
+                .section-columns-icons__content-item-info
+                  p.section-columns-icons__content-item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+            .section-columns-icons__content-item
+              .section-columns-icons__content-item-ico-wrapper
+                .section-columns-icons__content-item-ico
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/templ-ico.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/templ-ico.jpg" alt="img").lazyload
+              .section-columns-icons__content-item-desc
+                .section-columns-icons__content-item-title Subheading
+                .section-columns-icons__content-item-info
+                  p.section-columns-icons__content-item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+            .section-columns-icons__content-item
+              .section-columns-icons__content-item-ico-wrapper
+                .section-columns-icons__content-item-ico
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/templ-ico.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/templ-ico.jpg" alt="img").lazyload
+              .section-columns-icons__content-item-desc
+                .section-columns-icons__content-item-title Subheading
+                .section-columns-icons__content-item-info
+                  p.section-columns-icons__content-item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+            .section-columns-icons__content-item
+              .section-columns-icons__content-item-ico-wrapper
+                .section-columns-icons__content-item-ico
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/templ-ico.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/templ-ico.jpg" alt="img").lazyload
+              .section-columns-icons__content-item-desc
+                .section-columns-icons__content-item-title Subheading
+                .section-columns-icons__content-item-info
+                  p.section-columns-icons__content-item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+            .section-columns-icons__content-item
+              .section-columns-icons__content-item-ico-wrapper
+                .section-columns-icons__content-item-ico
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-srcset="./img/templ-ico.webp" type="image/webp")
+                    img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-src="./img/templ-ico.jpg" alt="img").lazyload
+              .section-columns-icons__content-item-desc
+                .section-columns-icons__content-item-title Subheading
+                .section-columns-icons__content-item-info
+                  p.section-columns-icons__content-item-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section-connect.bg-right
+    .section-connect__inner.site-container
+      .section-connect__image-wrapper
+        .section-connect__image
+          picture
+            source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-srcset="./img/connect-2.webp" type="image/webp")
+            img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="./img/connect-2.png" alt="img").lazyload
+
+      .section-connect__text-wrapper.txt-start.justify-start
+        .section-connect__title.mb-middle.section-title.section-title--secondary CASE STUDY HEADING
+        .section-connect__subtitle.mb-middle Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+        .section-connect__btn
+          a(href='#').site-btn.site-btn--yellow View case study
+
+
+  .section-connect
+    .section-connect__inner.site-container
+      .section-connect__text-wrapper
+        .section-connect__title.section-title.section-title--secondary WORK WITH US
+        .section-connect__subtitle Get in touch to find out more about how we can help.
+        .section-connect__btn
+          a(href='#').site-btn.site-btn--yellow LET’S CONNECT
 
 
 

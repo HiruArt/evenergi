@@ -410,6 +410,9 @@ div[data-tab-content]{
 .mb-0{
 	margin-bottom: 0 !important;
 }
+.pt-0{
+	padding-top: 0 !important;
+}
 .txt-start{
 	text-align: start !important;
 }
@@ -463,4 +466,12 @@ div[data-tab-content]{
 			background-color: white;
 		}
 	}
+}
+.dir-col-rev{
+	@include for-680{
+		flex-direction: column-reverse !important;
+	}
+}
+.border-top{
+	border-top: 2px solid #E4E4E4;
 }
