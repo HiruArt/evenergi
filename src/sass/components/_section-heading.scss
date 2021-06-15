@@ -56,9 +56,10 @@
 		max-width: 960px;
 
 		&.position-center {
-			top: 350px;
-			@include for-680 {
-				top: 0;
+			margin-top: 350px;
+
+			@include for-1300{
+				margin-top: 35px;
 			}
 		}
 
@@ -102,6 +103,10 @@
 
 		&.height-800 {
 			max-height: 800px;
+
+			@include for-1300{
+				max-height: 400px;
+			}
 		}
 
 		img {
