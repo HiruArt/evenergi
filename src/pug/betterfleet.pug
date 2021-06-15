@@ -1,0 +1,60 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Betterfleet page";
+  - var pageClass = "betterfleet-page";
+  - var pageActive = "betterfleet-page";
+
+block content
+  div.main-wrap
+    .hero
+      .hero__inner
+        .hero__bg
+          picture
+            source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-srcset="./img/hero-betterfleet.webp" type="image/webp")
+            img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="./img/hero-betterfleet.png" alt="img" height="650").lazyload
+        .hero__content.site-container
+          .hero__geom-wrap
+            .hero__geom
+              picture
+                img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="./img/hero-geom.svg" alt="img" width="1190" height="550").lazyload
+            h1.hero__title BETTERFLEET
+          .hero__text Our BetterFleet platform and services provide the most cost effective, accurate, fast and flexible way to understand the future scenarios for your fleet, make holistic strategic decisions in the new world of zero emissions technologies and manage your new assets.
+          .hero__btn
+            a(href="./blog.html").hero__btn-i.site-btn.site-btn--violet
+              span REQUEST A DEMO
+
+
+
+
+
+
+
+
+    .section-connect.bg-right
+      .section-connect__inner.site-container
+        .section-connect__image-wrapper
+          .section-connect__image
+            picture
+              source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="./img/connect-2.webp" type="image/webp")
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="./img/connect-2.png" alt="img" width="574" height="380").lazyload
+
+        .section-connect__text-wrapper.txt-start.justify-start
+          .section-connect__title.mb-middle.section-title.section-title--secondary CASE STUDY HEADING
+          .section-connect__subtitle.mb-middle Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow View case study
+
+
+    .section-connect
+      .section-connect__inner.site-container
+        .section-connect__text-wrapper
+          .section-connect__title.section-title.section-title--secondary WORK WITH US
+          .section-connect__subtitle Get in touch to find out more about how we can help.
+          .section-connect__btn
+            a(href='#').site-btn.site-btn--yellow LET’S CONNECT
