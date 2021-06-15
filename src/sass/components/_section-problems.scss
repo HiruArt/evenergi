@@ -1,107 +1,167 @@
 @import "../modules/_help";
 
-.section-problems{
-  &__inner{
-    padding-top: 60px;
-    padding-bottom: 90px;
-    border-top: 4px solid #E4E4E4;
-    border-bottom: 4px solid #E4E4E4;
+.section-problems {
+	&__inner {
+		padding-top: 60px;
+		padding-bottom: 90px;
+		border-top: 4px solid #E4E4E4;
+		border-bottom: 4px solid #E4E4E4;
 
-    @include for-1400 {
-      padding-top: 30px;
-      padding-bottom: 40px;
-    }
-  }
+		@include for-1400 {
+			padding-top: 30px;
+			padding-bottom: 40px;
+		}
+	}
 
-  &__title{
-    margin-bottom: 50px;
-  }
+	&__title {
+		margin-bottom: 50px;
+	}
 
-  &__list{
+	&__list {
 
-  }
+	}
 
-  &__item{
-    width: 33.33333%;
-    display: flex;
+	&__item {
+		width: 33.33333%;
+		display: flex;
 
-    @include for-1024{
-      width: 100%;
-      margin-bottom: 15px;
-    }
-  }
+		@include for-1024 {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
 
-  &__case{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+	&__case {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 
-    @include for-1024{
-      flex-direction: row;
-      align-items: center;
-    }
-  }
+		@include for-1024 {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
 
-  &__case-ico{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+	&__case-ico {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 
-    @include from-1024{
-      margin-bottom: 50px;
-    }
+		@include from-1024 {
+			margin-bottom: 50px;
+		}
 
-    @include for-1024{
-      max-width: 80px;
-    }
+		@include for-1024 {
+			max-width: 80px;
+		}
 
-    picture{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+		picture {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-    img {
-      object-fit: contain;
+		img {
+			object-fit: contain;
 
-      @include for-1600 {
-        width: 150px;
-        height: 150px;
-      }
+			@include for-1600 {
+				width: 150px;
+				height: 150px;
+			}
 
-      @include for-1400 {
-        width: 120px;
-        height: 120px;
-      }
+			@include for-1400 {
+				width: 120px;
+				height: 120px;
+			}
 
-      @include for-1024{
-        width: 80px;
-        height: 80px;
-      }
-    }
-  }
+			@include for-1024 {
+				width: 80px;
+				height: 80px;
+			}
+		}
+	}
 
-  &__case-text{
-    text-align: center;
-    font-size: 30px;
-    line-height: 36px;
-    color: white;
-    width: 100%;
-    height: fit-content;
+	&__case-text {
+		text-align: center;
+		font-size: 30px;
+		line-height: 36px;
+		color: white;
+		width: 100%;
+		height: fit-content;
 
+		@include for-1600 {
+			font-size: 18px;
+			line-height: 150%;
+
+			> br {
+				display: none;
+			}
+		}
+
+		@include for-1024 {
+			padding-left: 15px;
+			font-size: 16px;
+		}
+	}
+
+	&__case-title {
+		font-size: 36px;
+		color: #fff;
+		margin-bottom: 50px;
     @include for-1600{
-      font-size: 18px;
-      line-height: 150%;
-
-      > br{
-        display: none;
-      }
+      font-size: 24px;
     }
+		@include for-1100 {
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+	}
 
-    @include for-1024{
-      padding-left: 15px;
-      font-size: 16px;
+	&__case-list-wrapper {
+
+	}
+
+	&__case-list {
+
+	}
+
+	&__case-list-item {
+		position: relative;
+		padding-left: 14px;
+		font-size: 30px;
+		color: #fff;
+		margin-bottom: 40px;
+    @include for-1600{
+      font-size: 20px;
     }
+    @include for-1100{
+      font-size: 14px;
+    }
+		@include for-1100 {
+			margin-bottom: 15px;
+		}
 
+		&:after {
+			position: absolute;
+			content: '';
+			z-index: 1;
+			top: 5px;
+			left: 0;
+			margin-right: 8px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+		}
+	}
+  &__info-text{
+    margin-top: 70px;
+    font-size: 26px;
+    font-weight: 500;
+    @include for-1100{
+			margin-top: 20px;
+			font-size: 14px;
+    }
   }
+
 }

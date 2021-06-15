@@ -3,8 +3,8 @@ header.header
     .header__content.site-container
       .header__logo
         a(href=(pageActive !== "home-page"
-                ? "./"
-                : 'javascript:void(0);')).header__logo-link
+						? "./"
+						: 'javascript:void(0);')).header__logo-link
           include ../../img/logo-color.svg
       .header__menu
         .header__logo.header__logo--mobile
@@ -16,11 +16,14 @@ header.header
             li.nav-menu__item.custom-col
               a(href="javascript:void(0)"
                 class=(pageActive === "who-we-are-page"
-                    ? "nav-menu__link active"
-                    : 'nav-menu__link'))
+										? "nav-menu__link active"
+										: 'nav-menu__link'))
                 span Who We Are
             li.nav-menu__item.custom-col
-              a(href="javascript:void(0)").nav-menu__link
+              a(href="./services.html"
+                class=(pageActive === "contact-page"
+										? "nav-menu__link active"
+										: 'nav-menu__link'))
                 span Services
             li.nav-menu__item.custom-col
               a(href="javascript:void(0)").nav-menu__link
@@ -28,8 +31,8 @@ header.header
             li.nav-menu__item.custom-col
               a(href="./study.html"
                 class=(pageActive === "study-page"
-                  ? "nav-menu__link active"
-                  : 'nav-menu__link'))
+										? "nav-menu__link active"
+										: 'nav-menu__link'))
                 span Knowledge Hub
             li.nav-menu__item.custom-col
               a(href="javascript:void(0)").nav-menu__link
@@ -37,8 +40,8 @@ header.header
             li.nav-menu__item.custom-col
               a(href="./contact.html"
                 class=(pageActive === "contact-page"
-                  ? "nav-menu__link active"
-                  : 'nav-menu__link'))
+										? "nav-menu__link active"
+										: 'nav-menu__link'))
                 span Contact Us
 
       .header__menu-btn
