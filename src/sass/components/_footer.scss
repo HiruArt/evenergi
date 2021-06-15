@@ -69,7 +69,7 @@
 	}
 
 	&__center {
-		padding: 65px 0 40px;
+		padding: 60px 0 10px;
 		border-bottom: 3px solid #fff;
 		@include for-800{
 			padding: 25px 0 15px;
@@ -92,7 +92,7 @@
 
 	&__info-row {
 		font-size: 20px;
-		line-height: normal;
+		line-height: 28px;
 		color: #fff;
 		max-width: 400px;
 
@@ -156,7 +156,7 @@
 		font-size: 36px;
 		text-transform: uppercase;
 		color: #fff;
-		margin-bottom: 50px;
+		margin-bottom: 32px;
 
 		@include for-1600 {
 			font-size: 30px;
@@ -176,10 +176,10 @@
 	}
 
 	&__col-item {
-		margin-bottom: 50px;
+		margin-bottom: 34px;
 
 		@include for-1600 {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 		}
 		@include for-1400 {
 			margin-bottom: 15px;

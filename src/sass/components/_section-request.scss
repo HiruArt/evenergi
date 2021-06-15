@@ -3,8 +3,8 @@
 .section-request{
 
   &__inner{
-    padding-top: 55px;
-    padding-bottom: 50px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 
     &.site-container {
       max-width: 1124px;
@@ -22,7 +22,7 @@
   }
 
   &__title{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     @include for-1600{
       margin-bottom: 40px;
@@ -35,7 +35,7 @@
   }
 
   &__form{
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 
     @include for-1600{
       margin-bottom: 30px;
@@ -83,7 +83,7 @@
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 80px;
-    line-height: 70px;
+    line-height: 133%;
 
     @include for-1600{
       font-size: 36px;

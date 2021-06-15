@@ -5,7 +5,7 @@
 
 	&__inner {
 		padding-top: 90px;
-		padding-bottom: 60px;
+		padding-bottom: 57px;
 
 		@include for-1600 {
 			padding-top: 30px;
@@ -14,7 +14,7 @@
 	}
 
 	&__title {
-		margin-bottom: 30px;
+		margin-bottom: 24px;
 	}
 
 	&__head {
@@ -49,6 +49,7 @@
 
 	&__text {
 		font-size: 30px;
+		line-height: 40px;
 		margin-bottom: 50px;
 		color: #666666;
 

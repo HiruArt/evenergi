@@ -2,8 +2,8 @@
 
 .section-problems {
 	&__inner {
-		padding-top: 60px;
-		padding-bottom: 90px;
+		padding-top: 68px;
+		padding-bottom: 127px;
 		border-top: 4px solid #E4E4E4;
 		border-bottom: 4px solid #E4E4E4;
 
@@ -14,7 +14,7 @@
 	}
 
 	&__title {
-		margin-bottom: 50px;
+		margin-bottom: 70px;
 	}
 
 	&__list {
@@ -48,7 +48,7 @@
 		justify-content: center;
 
 		@include from-1024 {
-			margin-bottom: 50px;
+			margin-bottom: 62px;
 		}
 
 		@include for-1024 {
@@ -84,7 +84,7 @@
 	&__case-text {
 		text-align: center;
 		font-size: 30px;
-		line-height: 36px;
+		line-height: 133%;
 		color: white;
 		width: 100%;
 		height: fit-content;
@@ -130,7 +130,7 @@
 		padding-left: 14px;
 		font-size: 30px;
 		color: #fff;
-		margin-bottom: 40px;
+		margin-bottom: 34px;
     @include for-1600{
       font-size: 20px;
     }
@@ -145,7 +145,7 @@
 			position: absolute;
 			content: '';
 			z-index: 1;
-			top: 5px;
+			top: 8px;
 			left: 0;
 			margin-right: 8px;
 			width: 6px;
@@ -155,13 +155,34 @@
 		}
 	}
   &__info-text{
-    margin-top: 70px;
+		text-align: center;
+    margin-top: 50px;
     font-size: 26px;
+		line-height: 36px;
     font-weight: 500;
+		color: #4D4D4D;
     @include for-1100{
 			margin-top: 20px;
 			font-size: 14px;
     }
   }
 
+}
+
+
+.service-page .section-problems{
+	&__inner{
+		border: 0;
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	&__case{
+		.color-case{
+			padding-top: 40px;
+		}
+	}
+	&__case-title {
+		font-weight: 600;
+		margin-bottom: 24px;
+	}
 }

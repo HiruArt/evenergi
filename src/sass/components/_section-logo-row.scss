@@ -23,7 +23,7 @@
 		font-weight: 800;
 		font-size: 42px;
 		color: #004B70;
-		margin-bottom: 100px;
+		margin-bottom: 83px;
 		@include for-680 {
 			font-size: 30px;
 			margin-bottom: 50px;
@@ -79,9 +79,34 @@
 			}
 		}
 	}
+
+	&__logo-link-wrapper {
+		margin-top: 70px;
+	}
+
+	&__logo-link {
+		font-size: 21px;
+		font-weight: 800;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #19B3FF;
+		transition: .3s;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.service-page .section__logo-title {
+	font-size: 32px;
+	margin-top: 99px;
+	margin-bottom: 53px;
 }
 
 .service-page .section__logo-row {
+	margin-top: 43px;
+	margin-bottom: 13px;
 	@include for-680 {
 		margin-bottom: 0;
 	}

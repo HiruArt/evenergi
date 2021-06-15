@@ -114,8 +114,8 @@
 
 	&__content{
 		display: flex;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 90px;
+		padding-bottom: 80px;
 
 		@include for-680{
 			padding-top: 30px;
@@ -144,7 +144,7 @@
 
 	&__text{
 		font-size: 28px;
-		line-height: 150%;
+		line-height: 140%;
 		margin-bottom: 50px;
 		color: #666666;
 

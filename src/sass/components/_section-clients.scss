@@ -76,7 +76,7 @@
 	&__testimonials-title {
 		//font-size: 42px;
 		//color: #FF8D00;
-		//margin-bottom: 45px;
+		margin-bottom: 32px;
 		//text-transform: uppercase;
 		//text-align: start;
 		//@include for-1200 {
@@ -86,7 +86,7 @@
 
 	&__testimonials-rating {
 		border-top: 3px solid #fff;
-		padding-top: 80px;
+		padding-top: 63px;
 		display: flex;
 		flex-wrap: wrap;
 		//gap: 140px;
@@ -195,7 +195,7 @@
 	&__testimonials-text-wrapper {
 		display: flex;
 		border-top: 3px solid #E4E4E4;
-		padding-top: 140px;
+		padding-top: 160px;
 		@include for-800 {
 			padding-top: 50px;
 		}
@@ -235,7 +235,7 @@
 	}
 
 	&__testimonials-author {
-		padding-top: 55px;
+		padding-top: 43px;
 		font-size: 28px;
 		font-weight: 500;
 		color: #004B70;

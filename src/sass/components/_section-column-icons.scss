@@ -7,7 +7,7 @@
 	}
 
 	&__inner {
-		padding-top: 80px;
+		padding-top: 57px;
 		border-top: 2px solid #E4E4E4;
 		@include for-992 {
 			padding-top: 40px;
@@ -15,6 +15,7 @@
 	}
 
 	&__title {
+		margin-bottom: 38px;
 	}
 
 	&__info {
