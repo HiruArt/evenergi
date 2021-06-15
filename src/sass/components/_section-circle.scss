@@ -1,8 +1,16 @@
 .section-circle {
 	padding-bottom: 150px;
 
+	@include for-1600 {
+		padding-bottom: 100px;
+	}
+
+	@include for-1400 {
+		padding-bottom: 70px;
+	}
+
 	@include for-680 {
-		padding-bottom: 0;
+		padding-bottom: 30px;
 	}
 	&__inner {
 		padding-top: 80px;
@@ -14,7 +22,7 @@
 	}
 
 	&__title {
-		text-align: center;
+		//text-align: center;
 	}
 
 	&__title-info-wrapper {
@@ -37,8 +45,15 @@
 	}
 
 	&__row {
-		display: flex;
-		justify-content: space-around;
+		//justify-content: space-around;
+		width: 100%;
+		
+		@include from-1440{
+			padding-left: 170px;
+			padding-right: 170px;
+		}
+
+
 		&.mar-bot{
 			margin-bottom: 38px;
 		}
@@ -49,21 +64,41 @@
 	}
 
 	&__item {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		max-width: 290px;
-		margin: 0 15px;
-		height: 100%;
+		//display: flex;
+		//flex-direction: column;
+		//align-items: center;
+		//justify-content: center;
+		//max-width: 290px;
+		//margin: 0 15px;
+		//height: 100%;
 		transition: .3s;
+
+		display: flex;
+		height: auto;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 33.33333%;
+
 		&.item-bg{
-			max-width: 395px;
+			//max-width: 395px;
 			padding:20px 40px;
 			border-radius: 12px;
+
+			@include for-992 {
+				max-width: 100%;
+				width: 50%;
+				margin: 0;
+			}
+
 			@include for-800{
 				padding: 10px 15px;
 			}
+
+			@include for-680 {
+				width: 100%;
+			}
+
 			&:hover{
 				background-color: #F3F3F3;
 			}
@@ -71,9 +106,12 @@
 		@include for-992 {
 			margin-top: 20px;
 			margin-bottom: 20px;
+			max-width: 100%;
+			width: 50%;
 		}
 		@include for-680 {
 			margin: 20px 0;
+			width: 100%;
 		}
 	}
 
@@ -101,6 +139,7 @@
 		@include for-800 {
 			width: 200px;
 			height: 200px;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -115,6 +154,10 @@
 		@include for-1100 {
 			font-size: 16px;
 		}
+
+		@include for-992{
+			text-align: center;
+		}
 	}
 
 	&__item-descr {
@@ -127,10 +170,19 @@
 			font-size: 14px;
 			margin-bottom: 25px;
 		}
+		@include for-992{
+			text-align: center;
+		}
 	}
 
 	&__item-bnt {
 		width: 100%;
+		margin-top: auto;
+
+		@include for-992{
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	&__item-link {
@@ -144,8 +196,26 @@
 			font-size: 16px;
 		}
 
+		@include for-992{
+			width: fit-content;
+		}
+
 		&:hover {
 			color: #870058;
 		}
+	}
+
+	&__head{
+		@include from-1440{
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+
+	&__body{
+		//@include from-1440{
+		//	padding-left: 170px;
+		//	padding-right: 170px;
+		//}
 	}
 }
