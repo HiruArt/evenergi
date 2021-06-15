@@ -32,13 +32,6 @@ if (UAString.indexOf("Trident") !== -1 && UAString.indexOf("rv:10") !== -1) {
 
 $(document).ready(function () {
 
-	// cookie start
-	$(document).on('click', '.cookies__btn', function (e) {
-		e.preventDefault();
-		$('.cookies').addClass('hidden');
-	});
-	// cookie end
-
 
 	//menu start
 	$('.js_mobile-menu').click(function () {
@@ -115,9 +108,9 @@ $(document).ready(function () {
 		$([document.documentElement, document.body]).animate({
 			scrollTop: $(targetSection).offset().top
 		}, 1000);
+
 	});
 	//scroll down end
-
 
 	if ($(window).width() > 1200) {
 		let scrollDown;
@@ -165,52 +158,6 @@ $(document).ready(function () {
 	/*popups end*/
 
 
-	// slider best-fit
-
-	// if($(window).width() > 992 && $(document).find('.js_best-fit-slider').length > 0) {
-	// 	const bestFitSlider = new Swiper('.js_best-fit-slider', {
-	// 		loop: true,
-	// 		slidesPerView: 2.5,
-	// 		navigation: {
-	// 			nextEl: '.section__slider-nav-next',
-	// 			prevEl: '.section__slider-nav-prev',
-	// 		},
-	// 		pagination: {
-	// 			el: '.section__slider-nav-counter',
-	// 			type: 'fraction',
-	// 		},
-	// 		// Responsive breakpoints
-	// 		breakpoints: {
-	// 			320: {
-	// 				slidesPerView: 1,
-	// 			},
-	// 			768: {
-	// 				slidesPerView: 1.5,
-	// 			},
-	// 			1400: {
-	// 				slidesPerView: 2.5,
-	// 			},
-	// 			1920: {
-	// 				slidesPerView: 3.5,
-	// 			}
-	// 		}
-	// 	});
-	// }
-
-	//script for accordion
-
-	$(".js_site-accord__item.active .js_site-accord__content").show();
-	$(document).on("click", ".js_site-accord .js_site-accord__head", function(e){
-		let accord = $(this).closest(".js_site-accord");
-		let accordItem = $(this).closest(".js_site-accord__item");
-
-		if(!$(accordItem).hasClass("active")) {
-			$(accord).find(".active .js_site-accord__content").slideToggle();
-			$(accord).find(".js_site-accord__item").removeClass("active");
-			$(accordItem).addClass("active")
-			$(accordItem).find(".js_site-accord__content").slideToggle();
-		}
-	})
 
 	//script for tab
 	$(document).on("click", "[data-tab-name]", function(e){
