@@ -171,7 +171,7 @@
 	font-weight: 700;
 	background: #00283B;
 	color: white;
-	padding: 16px 30px;
+	padding: 14px 30px;
 	border-radius: 50px;
 	cursor: pointer;
 	border: 2px solid #00283B;
@@ -180,6 +180,7 @@
 	width: fit-content;
 	min-width: 260px;
 	justify-content: center;
+	line-height: 110%;
 
 	@include for-1024{
 		min-width: 150px;
@@ -196,6 +197,7 @@
 
 	span{
 		font-weight: 700;
+		line-height: 110%;
 
 		@include for-1600{
 			font-size: 18px;
@@ -483,8 +485,15 @@ div[data-tab-content]{
 .border-top{
 	border-top: 2px solid #E4E4E4;
 }
+.border-bottom{
+	border-bottom: 2px solid #E4E4E4;
+}
 
 .site-btn--start{
 	display: flex !important;
 	justify-content: flex-start !important;
+}
+
+.align-items-start{
+	align-items: flex-start;
 }

@@ -1,0 +1,251 @@
+@import "../modules/_help";
+
+.section-strategic{
+
+  &__inner{
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  &__title{
+    margin-bottom: 35px;
+  }
+
+  &__head{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 85px;
+    margin-bottom: 75px;
+
+    @include for-1600{
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    @include for-992{
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: calc(100% - 33.33333%);
+      height: 100%;
+      border: 1px solid #004B70;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include for-992{
+        width: 100%;
+      }
+    }
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: calc(100% + 140px);
+      background: #004B70;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include for-1600{
+        height: calc(100% + 60px);
+      }
+    }
+  }
+
+  &__head-item{
+    width: 33.33333%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    @include for-992{
+      width: 100%;
+      margin-bottom: 15px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #004B70;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__head-item-content{
+    color: #666666;
+    background: white;
+    white-space: nowrap;
+    padding: 20px 30px;
+    border: 1px solid #004B70;
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+
+    @include for-1600{
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+
+    @include for-1200{
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  }
+
+
+  &__big-title{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: white;
+    font-weight: 800;
+    font-size: 48px;
+    color: #004B70;
+
+    @include for-1600{
+      font-size: 36px;
+    }
+
+    @include for-1400{
+      font-size: 24px;
+    }
+
+    @include for-1024{
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__center{
+    padding-top: 60px;
+    position: relative;
+
+    @include for-1024{
+      padding-top: 30px;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 60px;
+      background: #004B70;
+      width: 1px;
+      transform: translateX(-50%);
+
+    }
+  }
+
+  &__center-list{
+    position: relative;
+    z-index: 1;
+  }
+
+  &__center-item{
+    width: 50%;
+    background: #004B70;
+    border: 1px solid white;
+    margin-bottom: 0;
+
+    @include for-680{
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid white;
+    }
+  }
+
+  &__center-content{
+    display: flex;
+    padding: 45px 30px;
+
+    @include for-1600{
+      padding: 20px 15px;
+    }
+  }
+
+  &__center-ico{
+    max-width: 72px;
+    width: 100%;
+
+    picture{
+      display: flex;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit:  contain;
+      }
+    }
+
+    @include for-1024{
+      max-width: 50px;
+    }
+  }
+
+  &__center-txt{
+    padding-left: 30px;
+
+    @include for-1600{
+      padding-left: 20px;
+    }
+  }
+
+  &__center-name{
+    margin-bottom: 25px;
+    font-size: 42px;
+    color: #19B3FF;
+
+    @include for-1600{
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    @include for-1400{
+      font-size: 24px;
+    }
+
+    @include for-1024{
+      font-size: 18px;
+    }
+  }
+
+  &__center-desk{
+    color: white;
+    font-size: 28px;
+    line-height: 130%;
+
+    @include for-1600{
+      font-size: 22px;
+    }
+
+    @include for-1400{
+      font-size: 16px;
+    }
+
+    @include for-1024{
+      font-size: 14px;
+    }
+  }
+
+}

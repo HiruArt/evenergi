@@ -34,6 +34,7 @@
 	}
 
 	&__content--inner {
+		width: 100%;
 
 		&.dflex {
 			@include for-800 {
@@ -49,12 +50,13 @@
 
 	&__text {
 		font-size: 30px;
-		line-height: 40px;
+		line-height: 130%;
 		margin-bottom: 50px;
 		color: #666666;
 
 		@include for-1600 {
 			font-size: 18px;
+			line-height: 130%;
 		}
 
 		@include for-1400 {
@@ -66,8 +68,18 @@
 		}
 
 		&.service-page-text {
-			max-width: 875px;
-			margin-right: 85px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding-right: 85px;
+
+			@include for-1600{
+				padding-right: 30px;
+			}
+
+			@include for-768{
+				padding-right: 0;
+			}
 
 			.section-connect__btn {
 				margin-top: 85px;
@@ -82,11 +94,31 @@
 	}
 
 	&__image-wrapper {
+		max-width: 700px;
+		width: 100%;
+		display: flex;
 
+		@include for-1400{
+			max-width: 550px;
+		}
+
+		@include for-768{
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__image {
-		max-width: 700px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		picture{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
 		img {
 			width: 100%;

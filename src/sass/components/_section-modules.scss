@@ -1,0 +1,182 @@
+@import "../modules/_help";
+
+.section-modules{
+  background: #00283B;
+
+  &__inner{
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    @include for-1024{
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &__title{
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    border-bottom: 4px solid white;
+
+    @include for-1600{
+      border-bottom: 2px solid white;
+    }
+  }
+
+  &__description{
+    color: white;
+    font-size: 28px;
+    line-height: 130%;
+    margin-bottom: 70px;
+
+    @include for-1600{
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    @include for-1400{
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    @include for-1024{
+      margin-bottom: 15px;
+    }
+  }
+
+  &__list{
+    //column-count: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-col{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    justify-content: space-between;
+
+    @include for-992{
+      width: 100%;
+    }
+  }
+
+  &__item{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @include for-1600{
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item-content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: 4px solid white;
+    width: 100%;
+
+    @include for-1600{
+      padding-bottom: 20px;
+      border-bottom: 2px solid white;
+    }
+
+    @include for-1024{
+      padding-bottom: 0;
+    }
+  }
+
+  &__head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__ico{
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  &__name{
+    color: #19B3FF;
+    font-size: 36px;
+    line-height: 130%;
+
+    @include for-1600{
+      font-size: 24px;
+    }
+
+    @include for-1400{
+      font-size: 18px;
+    }
+
+    @include for-1024{
+      font-size: 16px;
+    }
+  }
+
+  &__body{
+
+    p{
+      margin: 0;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 24px;
+      line-height: 130%;
+
+      @include for-1600{
+        font-size: 18px;
+      }
+
+      @include for-1400{
+        font-size: 16px;
+      }
+
+      @include for-1024{
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__link{
+    font-size: 18px;
+    font-weight: 800;
+    color: #19B3FF;
+    transition: .3s all ease-in;
+    margin-bottom: 20px;
+
+    @include for-1600{
+      font-size: 16px;
+    }
+
+    @include for-1400{
+      font-size: 14px;
+    }
+
+    &:hover{
+      color: #FF8D00;
+    }
+
+  }
+
+  &__btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include for-420{
+      margin-top: 0;
+    }
+  }
+
+  &__btn-i{
+    margin: 10px;
+    white-space: nowrap;
+  }
+
+}

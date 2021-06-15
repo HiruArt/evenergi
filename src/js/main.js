@@ -215,10 +215,16 @@ $(document).ready(function () {
 	//script for tab
 	$(document).on("click", "[data-tab-name]", function(e){
 		let dataTabContentName = $(this).attr("data-tab-name");
-		$("[data-tab-name]").removeClass("active");
+		$(this).closest('.js_site-tab').find("[data-tab-name]").removeClass("active");
 		$(this).addClass("active");
-		$("[data-tab-content]").removeClass("active");
+		$(this).closest('.js_site-tab').find("[data-tab-content]").removeClass("active");
 		$("[data-tab-content="+ dataTabContentName + "]").addClass("active");
+		setTimeout(function (){
+			$([document.documentElement, document.body]).animate({
+				scrollTop: $("[data-tab-content="+ dataTabContentName + "]").offset().top - 150
+			}, 500);
+		}, 300)
+
 	});
 
 	//script for counter
