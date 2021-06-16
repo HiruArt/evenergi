@@ -123,6 +123,10 @@
 		max-width: calc(50vw - ((100vw - 1200px) / 2));
 	}
 
+	@include for-768{
+		padding: 0 15px!important;
+	}
+
 	&--left{
 		margin-left: auto;
 	}
@@ -183,13 +187,15 @@
 	line-height: 110%;
 	text-transform: uppercase;
 
+	@include for-1600{
+		min-width: 200px;
+		font-size: 20px;
+	}
+
 	@include for-1024{
 		min-width: 150px;
 	}
 
-	@include for-1600{
-		font-size: 18px;
-	}
 
 	@include for-1200{
 		font-size: 16px;
@@ -201,7 +207,7 @@
 		line-height: 110%;
 
 		@include for-1600{
-			font-size: 18px;
+			font-size: 20px;
 		}
 
 		@include for-1200{

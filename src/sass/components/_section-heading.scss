@@ -59,7 +59,11 @@
 		&.position-center {
 			margin-top: 350px;
 
-			@include for-1300{
+			@include for-1600{
+				margin-top: 80px;
+			}
+
+			@include for-1400{
 				margin-top: 35px;
 			}
 
@@ -101,8 +105,9 @@
 	&__right {
 		.site-container-half--right{
 			@media(min-width: 992px) and (max-width: 1600px){
-				justify-content: flex-end;
-				display: flex;
+				//.section-heading__right-image.height-800{
+				//
+				//}
 			}
 		}
 	}
@@ -136,6 +141,10 @@
 
 		&.height-800 {
 			max-height: 800px;
+
+			@include for-1600{
+				max-height: 600px;
+			}
 
 			@include for-1300{
 				max-height: 400px;
