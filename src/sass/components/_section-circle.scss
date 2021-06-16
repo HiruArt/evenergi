@@ -135,8 +135,9 @@
 		overflow: hidden;
 		text-align: center;
 
-		&:hover img{
-			transform: scale(1.1);
+		picture{
+			overflow: hidden;
+			border-radius: 50%;
 		}
 
 		img {

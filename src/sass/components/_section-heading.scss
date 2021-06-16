@@ -98,6 +98,15 @@
 		}
 	}
 
+	&__right {
+		.site-container-half--right{
+			@media(min-width: 992px) and (max-width: 1600px){
+				justify-content: flex-end;
+				display: flex;
+			}
+		}
+	}
+
 	&__right-image-wrapper {
 		height: 100%;
 		//width: calc(100vw - (100vw - 1600px) - 500px);
