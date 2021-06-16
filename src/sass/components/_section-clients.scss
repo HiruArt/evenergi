@@ -51,7 +51,7 @@
 	&__testimonials-left {
 		background-color: #00283B;
 		padding-right: 80px;
-		@include for-1400 {
+		@include for-1440 {
 			padding-right: 40px;
 		}
 		@include for-800 {
@@ -63,7 +63,7 @@
 	&__testimonials-right {
 		padding-left: 65px;
 
-		@include for-1400 {
+		@include for-1440 {
 			padding-left: 40px;
 		}
 		@include for-800 {
@@ -90,7 +90,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		//gap: 140px;
-		@include for-1400 {
+		@include for-1440 {
 			//gap: 50px;
 		}
 		@include for-680 {
@@ -111,7 +111,7 @@
 		&:nth-child(3), &:nth-child(4){
 			margin-bottom: 0!important;
 		}
-		@include for-1400 {
+		@include for-1440 {
 			width: calc(50% - 25px);
 
 			margin-right: 25px;
@@ -129,7 +129,7 @@
 		font-size: 72px;
 		color: #fff;
 		margin-bottom: 25px;
-		@include for-1400 {
+		@include for-1440 {
 			font-size: 36px;
 		}
 		@include for-680{
@@ -175,7 +175,7 @@
 	&__testimonials-text {
 		font-size: 30px;
 		color: #fff;
-		@include for-1400 {
+		@include for-1440 {
 			font-size: 20px;
 		}
 
@@ -209,7 +209,7 @@
 		margin-bottom: 60px;
 		padding-left: 37px;
 		text-align: start;
-		@include for-1400 {
+		@include for-1440 {
 			font-size: 24px;
 			padding-left: 20px;
 		}
@@ -225,7 +225,7 @@
 		width: 100%;
 		max-width: 60px;
 		height: auto;
-		@include for-1400 {
+		@include for-1440 {
 			top: -7px;
 			height: auto;
 		}
@@ -241,7 +241,7 @@
 		color: #004B70;
 		text-align: start;
 
-		@include for-1400 {
+		@include for-1440 {
 			font-size: 20px;
 		}
 		@include for-680{

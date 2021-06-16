@@ -61,6 +61,10 @@
 			@include for-1300{
 				margin-top: 35px;
 			}
+
+			@include for-680{
+				margin-top: 0;
+			}
 		}
 
 		@include for-1600 {
@@ -144,6 +148,9 @@
 }
 
 .service-page .section-heading__text {
-	left: 310px;
-	padding-bottom: 10px;
+
+	@include from-680 {
+		left: 310px;
+		padding-bottom: 10px;
+	}
 }
