@@ -166,12 +166,6 @@ $(document).ready(function () {
 		$(this).addClass("active");
 		$(this).closest('.js_site-tab').find("[data-tab-content]").removeClass("active");
 		$("[data-tab-content="+ dataTabContentName + "]").addClass("active");
-		setTimeout(function (){
-			$([document.documentElement, document.body]).animate({
-				scrollTop: $("[data-tab-content="+ dataTabContentName + "]").offset().top - 150
-			}, 500);
-		}, 300)
-
 	});
 
 	//script for counter
