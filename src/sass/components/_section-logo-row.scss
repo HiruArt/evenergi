@@ -82,6 +82,10 @@
 
 	&__logo-link-wrapper {
 		margin-top: 70px;
+
+		@include for-1600{
+			margin-top: 40px;
+		}
 	}
 
 	&__logo-link {

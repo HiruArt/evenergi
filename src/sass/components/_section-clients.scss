@@ -50,26 +50,32 @@
 
 	&__testimonials-left {
 		background-color: #00283B;
-		padding-right: 80px;
-		@include for-1440 {
-			padding-right: 40px;
-		}
-		@include for-800 {
-			padding-left: 0;
-			padding-right: 0;
+
+		.site-container-half{
+			padding-right: 80px;
+			@include for-1440 {
+				padding-right: 40px;
+			}
+			@include for-800 {
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
 	}
 
 	&__testimonials-right {
-		padding-left: 65px;
 
-		@include for-1440 {
-			padding-left: 40px;
-		}
-		@include for-800 {
-			padding-left: 0;
-			padding-right: 0;
-			padding-bottom: 0;
+		.site-container-half{
+			padding-left: 65px;
+
+			@include for-1440 {
+				padding-left: 40px;
+			}
+			@include for-800 {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+			}
 		}
 	}
 

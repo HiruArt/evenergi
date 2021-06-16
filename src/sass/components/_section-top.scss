@@ -37,6 +37,7 @@
     position: relative;
     color: white;
     margin-top: 0;
+    text-transform: uppercase;
 
     @include for-1600{
       font-size: 34px;
@@ -66,6 +67,7 @@
     color: white;
     font-size: 28px;
     max-width: 530px;
+    line-height: 147%;
 
     @include for-1600{
       font-size: 20px;

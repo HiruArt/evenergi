@@ -50,13 +50,13 @@
 
 	&__text {
 		font-size: 30px;
-		line-height: 130%;
+		line-height: 147%;
 		margin-bottom: 50px;
 		color: #666666;
 
 		@include for-1600 {
 			font-size: 18px;
-			line-height: 130%;
+			line-height: 147%;
 		}
 
 		@include for-1400 {
@@ -185,7 +185,7 @@
 
 	&__item-title {
 		font-size: 30px;
-		line-height: 150%;
+		line-height: 147%;
 		color: #004B70;
 		font-weight: 600;
 		margin-bottom: 15px;
