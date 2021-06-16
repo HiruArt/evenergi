@@ -12,7 +12,7 @@
 
     @include for-1600{
       padding-top: 60px;
-      min-height: 665px;
+      min-height: 695px;
     }
 
     @include for-1024{
@@ -21,16 +21,62 @@
 
   }
 
+  //&__bg-overlay{
+  //  width: 100% !important;
+  //  height: 100%;
+  //  background-repeat: no-repeat;
+  //  background-size: 100%;
+  //}
+  //
+  &__bg-overlay{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   &__bg{
     position: absolute;
-    right: -3%;
-    top: 60px;
+    //right: -3%;
+    //top: 60px;
+    //
+    //width: 60%;
+    //
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    //
+    //@include from-1600{
+    //  right: -3%;
+    //}
+    //@include for-1600{
+    //  left: 40%;
+    //}
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-    @include from-1600{
-      right: -3%;
+    picture{
+      width: 60%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    @include for-1600{
-      left: 40%;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     @include for-1024{
@@ -50,17 +96,20 @@
       display: none;
     }
 
-    img{
-      @include for-1600{
-        height: 600px;
-        width: 980px;
-      }
-
-      @include for-1024{
-        height: 100%;
-        width: 100%;
-      }
-    }
+    //img{
+    //  height: 600px;
+    //  width: 100%;
+    //
+    //  @include for-1600{
+    //    height: 600px;
+    //    width: 980px;
+    //  }
+    //
+    //  @include for-1024{
+    //    height: 100%;
+    //    width: 100%;
+    //  }
+    //}
   }
 
   &__content{
@@ -131,6 +180,7 @@
 
     @include for-1600{
       margin-bottom: 40px;
+      max-width: 500px;
     }
 
     @include for-1200{

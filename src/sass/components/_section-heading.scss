@@ -35,6 +35,7 @@
 		font-size: 42px;
 		padding-top: 44px;
 		margin-bottom: 0;
+
 		@include for-680 {
 			padding-top: 0;
 			font-size: 20px;
