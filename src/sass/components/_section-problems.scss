@@ -162,8 +162,10 @@
 		position: relative;
 		padding-left: 14px;
 		font-size: 30px;
+		line-height: 150%;
 		color: #fff;
 		margin-bottom: 34px;
+
     @include for-1600{
       font-size: 20px;
     }
@@ -178,13 +180,16 @@
 			position: absolute;
 			content: '';
 			z-index: 1;
-			top: 8px;
+			top: 17px;
 			left: 0;
 			margin-right: 8px;
 			width: 6px;
 			height: 6px;
 			border-radius: 50%;
 			background-color: #fff;
+			@include for-992{
+				top: 8px;
+			}
 		}
 	}
   &__info-text{

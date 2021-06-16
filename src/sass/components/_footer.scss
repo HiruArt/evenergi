@@ -92,7 +92,7 @@
 
 	&__info-row {
 		font-size: 20px;
-		line-height: 28px;
+		line-height: 140%;
 		color: #fff;
 		max-width: 400px;
 
@@ -239,7 +239,7 @@
 
 	&__address {
 		font-size: 20px;
-		line-height: 30px;
+		line-height: 150%;
 		color: #fff;
 
 		@include for-1600 {
