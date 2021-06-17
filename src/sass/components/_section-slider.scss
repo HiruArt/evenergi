@@ -199,10 +199,12 @@
 
 	&__info {
 		margin-top: 78px;
-		margin-bottom: 44px;
+		//margin-bottom: 44px;
+		margin-bottom: 32px;
 		font-size: 28px;
 		color: #666666;
 		text-align: center;
+		line-height: 147%;
 
 		br {
 			@include for-1600 {

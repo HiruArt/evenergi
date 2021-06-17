@@ -10,9 +10,11 @@ block content
     .section-top.webp-img(
       data-img="./img/blog-top-img01.jpg"
       data-webp="./img/blog-top-img01.webp")
-      .section-top__gradient.webp-img(
-        data-img="./img/secondary-gradient.png"
-        data-webp="./img/secondary-gradient.webp")
+      .section-top__gradient.lazyload(
+        data-bg="./img/secondary-gradient-01.svg")
+      //.section-top__gradient.webp-img(
+      //  data-img="./img/secondary-gradient.png"
+      //  data-webp="./img/secondary-gradient.webp")
       .section-top__inner.site-container
         h1.section-top__title CASE STUDY
         .section-top__desk Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.
@@ -33,9 +35,9 @@ block content
               .section-heading__right-image
                 picture
                   source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    data-srcset="./img/study-2.webp" type="image/webp")
+                    data-srcset="./img/study-4.webp" type="image/webp")
                   img.lazyload(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    data-src="./img/study-2.jpg" alt="img").lazyload
+                    data-src="./img/study-4.jpg" alt="img").lazyload
 
 
 

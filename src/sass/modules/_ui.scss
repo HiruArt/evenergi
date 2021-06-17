@@ -93,7 +93,7 @@
 
 .site-container {
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1660px;
 	width: 100%;
 	position: relative;
 	padding-left: 15px;
@@ -310,7 +310,8 @@ div[data-tab-content]{
 	display: flex;
 
 	&__wrapper{
-		margin-bottom: 45px;
+		//margin-bottom: 45px;
+		margin-bottom: 33px;
 
 		@include for-1600{
 			margin-bottom: 30px;
@@ -501,10 +502,10 @@ div[data-tab-content]{
 	}
 }
 .border-top{
-	border-top: 2px solid #E4E4E4;
+	border-top: 4px solid #E4E4E4;
 }
 .border-bottom{
-	border-bottom: 2px solid #E4E4E4;
+	border-bottom: 4px solid #E4E4E4;
 }
 
 .site-btn--start{
@@ -514,4 +515,18 @@ div[data-tab-content]{
 
 .align-items-start{
 	align-items: flex-start;
+}
+
+.cust-transform-right img{
+	transform: translateX(25px);
+
+	@include for-1600{
+		transform: translateX(20px);
+	}
+	@include for-1400{
+		transform: translateX(15px);
+	}
+	@include for-1024{
+		transform: translateX(0);
+	}
 }
